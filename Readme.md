@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Волков](https://up.htmlacademy.ru/htmlcss/23/user/354109).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
