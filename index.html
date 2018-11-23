@@ -5,13 +5,16 @@
 		<title>Девайс</title>
 	</head>
 	<body>
-		<!-- на счет aria-label'ов не уверен, там ли я их расставил в индексе и в каталоге или наоборот недоставил-->
 	<header class="main-header">
 		<a class="main-header-logo">
 			<img src="img/logo.png" alt="Логотип сайта Девайс" width="164" height="36">
 		</a>
-		<nav class="main-nav" aria-label="Навигация">
-			<input type="text" name="search" aria-label="Поиск">
+		<nav class="main-nav">
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<input type="text" name="search">
+				<!-- По стайлгайду тут еще кнопка "найти" при фокусе на инпут -->
+				<button class="form-search" type=button>Найти</button>
+			</form>
 			<ul class="user-menu">
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
@@ -150,7 +153,7 @@
 		</section>
 
 		<section class="about">
-			<h2 aria-label="О нас">О нас</h2>
+			<h2>О нас</h2>
 			<ul class="about-list">
 				<li class="about-item">
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>	
@@ -168,12 +171,12 @@
 		</section>
 
 		<section class="contacts">
-			<h2 aria-label="Контакты">Контакты</h2>
+			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<a href="#">
 				<img class="contacts-map" src="img/map.jpg" alt="Карта проезда" width="560" height="222">
 			</a>
-			<button class="contacts-button" type="button">Напишите нам</button><!-- Переделал в баттон, т.к. она открывает формы на этой же странице -->
+			<a href="#" class="contacts-button">Напишите нам</a>
 		</section>
 
 	</main>
@@ -191,20 +194,20 @@
 		</div>
 
 		<div class="main-footer-center">
-			<p class="main-footer-adress" aria-label="Адрес: г. Москва, ул. Строителей, 15">г. Москва, ул. Строителей, 15</p> <!-- добавил сюда aria-label (?)-->
+			<p class="main-footer-adress">г. Москва, ул. Строителей, 15</p>
 			<ul class="main-footer-menu">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантии</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<a class="main-footer-phone" href="tel:+74954959595" aria-label="Телефон: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
+			<a class="main-footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
 		</div>
 
 		<div class="main-footer-bottom">
 			<ul class="socials">
-				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке">Фейсбук</a></li>
-				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме">Инстаграмм</a></li>
-				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере">Твиттер</a></li>
+				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке"></a></li>
+				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме"></a></li>
+				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере"></a></li>
 			</ul>
 			<div class="copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -218,18 +221,18 @@
 		<h2 class="visually-hidden">Заполните форму</h2>
 		<p class="appointment-item">
 			<label for="appointment-name">Ваше Имя:</label>
-			<input type="text" name="name" placeholder="Имя Фамилия" id="appointment-name" value="">
+			<input type="text" name="name" placeholder="Имя Фамилия" id="appointment-name">
 		</p>
 		<p class="appointment-item">
 			<label for="appointment-email">Ваш e-mail:</label>
-			<input type="text" name="email" placeholder="email@example.com" id="appointment-email" value="">
+			<input type="text" name="email" placeholder="email@example.com" id="appointment-email">
 		</p>
 		<p class="appointment-item">
 			<label for="appointment-letter">Текст письма:</label>
 			<textarea name="letter" id="appointment-letter" placeholder="В свободной форме"></textarea>
 		</p>
 		<button class="button" type="submit">Отправить</button>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close" type="button" aria-label="Закрыть карту">Закрыть</button>
 	</form>
 
 	<section class="modal modal-map">
@@ -237,6 +240,7 @@
 		<p>
 			<img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва">
 		</p>
+		<button class="modal-close" type="button" aria-label="Закрыть карту">Закрыть</button>
 	</section>
 
 	</body>

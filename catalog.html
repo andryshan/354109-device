@@ -5,13 +5,16 @@
 		<title>Девайс</title>
 	</head>
 	<body>
-		<!-- на счет aria-label'ов не уверен, там ли я их расставил в индексе и в каталоге или наоборот недоставил-->
 	<header class="main-header">
-		<a class="main-header-logo" href="index.html" aria-label="На главную">
+		<a class="main-header-logo" href="index.html">
 			<img src="img/logo.png" alt="Логотип сайта Девайс" width="164" height="36">
 		</a>
-		<nav class="main-nav" aria-label="Навигация">
-			<input type="text" name="search" aria-label="Поиск">
+		<nav class="main-nav">
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<input type="text" name="search">
+				<!-- По стайлгайду тут еще кнопка "найти" при фокусе на инпут -->
+				<button class="form-search" type=button>Найти</button>
+			</form>
 			<ul class="user-menu">
 				<li><a href="#">Валентин Петухов</a></li>
 				<li><a href="#">Выйти</a></li>
@@ -60,24 +63,34 @@
 					<legend>Цвет</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="black" id="black" checked>
-							<label for="black">Черный</label>
+							<label>
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="black" checked>
+								Черный
+							</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="white" id="white">
-							<label for="white">Белый</label>
+							<label>
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="white">
+								Белый
+							</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="blue" id="blue" checked>
-							<label for="blue">Синий</label>
+							<label>
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="blue" checked>
+								Синий
+							</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="red" id="red" checked>
-							<label for="red">Красный</label>
+							<label>
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="red" checked>
+								Красный
+							</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pink" id="pink">
-							<label for="pink">Розовый</label>
+							<label>
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pink">
+								Розовый
+							</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -85,17 +98,21 @@
 					<legend>Bluetooth</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="choice" value="yes" id="filter-yes" checked>
-							<label for="filter-yes">Есть</label>
+							<label>
+								<input type="radio" class="visually-hidden filter-input filter-input-radio" name="choice" value="yes" checked>
+								Есть
+							</label>
 						</li>
 						<li class="filter-option">
-							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="choice" value="no" id="filter-no">
-							<label for="filter-no">Нет</label>
+							<label>
+								<input type="radio" class="visually-hidden filter-input filter-input-radio" name="choice" value="no">
+								Нет
+							</label>
 						</li>
 					</ul>
 				</fieldset>
+				<button type="submit" class="filters-button">Показать</button>
 			</form>
-			<button type="submit" class="filters-button">Показать</button>
 		</section>
 
 		<section class="catalog">
@@ -109,58 +126,57 @@
 				</ul>
 			</div>
 			<ul class="catalog-list">
-				<!-- Переделал итемы, чтоб в одной ссылке было и название и картинка (как в новом скринкасте по доступности) -->
 				<li class="catalog-item">
 					<a href="#">
 						<h3>Любительская селфи-палка</h3>
-						<p>
-							<img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-						</p>
 					</a>
+					<a href="#">
+						<img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+					</a>	
 					<p class="catalog-item-price">
 						<b>500 руб.</b>
 					</p>
-					<button class="catalog-button" type="button">В корзину</button>
-					<button class="catalog-add-compare" type="button">Добавить к сравнению</button>
+					<a href="#" class="catalog-button">В корзину</a>
+					<a href="#" class="catalog-add-compare">Добавить к сравнению</a>
 				</li>
 				<li class="catalog-item">
 					<a href="#">
 						<h3>Профессиональная селфи-палка</h3>
-						<p>
-							<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-						</p>
 					</a>
+					<a href="#">
+						<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+					</a>	
 					<p class="catalog-item-price">
 						<b>1 500 руб.</b>
 					</p>
-					<button class="catalog-button" type="button">В корзину</button>
-					<button class="catalog-add-compare" type="button">Добавить к сравнению</button>
+					<a href="#" class="catalog-button">В корзину</a>
+					<a href="#" class="catalog-add-compare">Добавить к сравнению</a>
 				</li>
 				<li class="catalog-item">
 					<a href="#">
 						<h3>Непотопляемая селфи-палка</h3>
-						<p>
-							<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-						</p>
 					</a>
+					<a href="#">
+						<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+					</a>	
 					<p class="catalog-item-price">
 						<b>2 500 руб.</b>
 					</p>
-					<button class="catalog-button" type="button">В корзину</button>
-					<button class="catalog-add-compare" type="button">Добавить к сравнению</button>
+					<a href="#" class="catalog-button">В корзину</a>
+					<a href="#" class="catalog-add-compare">Добавить к сравнению</a>
 				</li>
 				<li class="catalog-item">
 					<a href="#">
 						<h3>Селфи-палка «Следуй за мной»</h3>
-						<p>
-							<img src="img/item-4.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-						</p>
 					</a>
+					<a href="#">
+						<img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+					</a>	
 					<p class="catalog-item-price">
 						<b>4 900 руб.</b>
 					</p>
-					<button class="catalog-button" type="button">В корзину</button>
-					<button class="catalog-add-compare" type="button">Добавить к сравнению</button>
+					<a href="#" class="catalog-button">В корзину</a>
+					<a href="#" class="catalog-add-compare">Добавить к сравнению</a>
 				</li>
 			</ul>
 			<ul class="pagination">
@@ -189,20 +205,20 @@
 		</div>
 
 		<div class="main-footer-center">
-			<p class="main-footer-adress" aria-label="Адрес: г. Москва, ул. Строителей, 15">г. Москва, ул. Строителей, 15</p>
+			<p class="main-footer-adress">г. Москва, ул. Строителей, 15</p>
 			<ul class="main-footer-menu">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантии</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<a class="main-footer-phone" href="tel:+74954959595" aria-label="Телефон: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
+			<a class="main-footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
 		</div>
 
 		<div class="main-footer-bottom">
 			<ul class="socials">
-				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке">Фейсбук</a></li>
-				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме">Инстаграмм</a></li>
-				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере">Твиттер</a></li>
+				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке"></a></li>
+				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме"></a></li>
+				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере"></a></li>
 			</ul>
 			<div class="copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
