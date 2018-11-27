@@ -1,0 +1,393 @@
+@font-face{
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-ExtraBold.otf');
+	font-weight: 800; /* 800 = extra-bold */
+}
+
+@font-face{
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Light.otf');
+	font-weight: 300; /* 300 = light */
+}
+
+body{
+	margin: 0;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300; /* 300 = light */
+	letter-spacing: 0.01em;
+	color: #464646;
+	background-color: #ffffff;
+}
+
+.main-header{
+	background-color: #f7e296;
+}
+
+a{
+	text-decoration: none;
+}
+
+.user-menu{
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #000000;
+	list-style: none;
+}
+
+.interaction-menu,
+.interaction-menu ul{
+	list-style: none;
+}
+
+.interaction-menu a,
+.user-menu a{
+	color: #000000;
+}
+
+.interaction-menu{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.catalog-menu{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: 300;
+	color: #000000;
+	text-transform: none;
+	letter-spacing: 0.01em;
+}
+
+.main-nav a:hover,
+.main-header-logo:hover{
+	opacity: 0.6;
+}
+
+.main-nav a:active,
+.main-header-logo:active{
+	opacity: 0.3;
+}
+
+/* с блоком инпута правильно не знаю как поступать (забыл что пока мы делаем только базовую стиизацию)*/
+.main-nav input[type="text"]{
+	background-color: #f7e296;
+	border: transparent;
+	opacity: 0.3;
+}
+.form-search{
+	visibility: hidden;
+}
+.form-search:hover{
+	visibility: visible;
+
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+	width: 85px;
+	height: 49px;
+	border: 2px solid black;
+	color: white;
+	background-color: black;
+	padding: 11px 20px; 
+}
+
+.form-search:active{
+	visibility: visible;
+
+	color: rgba(255,255,255, 0.3); 
+}
+
+.main-nav input[type="text"]:focus ~ .form-search{
+	visibility: visible;
+
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+	width: 85px;
+	height: 49px;
+	border: 2px solid black;
+	color: black;
+	background-color: #f7e296;
+	padding: 11px 20px;
+}
+
+h2{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 48px;
+	color: black;
+	letter-spacing: 0.01em;
+}
+
+.about p{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #464646;
+	letter-spacing: 0;
+}
+
+
+.about-list,
+.about-company-list{
+	list-style: none;
+}
+
+.about-company-list{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	/* размер шрифта в фотошопе не высвечивается почему то, видно баг в макете */
+}
+
+.about-button,
+.contacts-button{
+	font-size: 18px;
+	line-height: 24px;
+	background-color: #f0c52e;
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	color: black;
+	text-align: center;
+	text-transform: uppercase; 
+	letter-spacing: 0.2em;
+}
+
+.about-button:hover,
+.contacts-button:hover{
+	color: #a88a20;
+}
+
+.main-footer{
+	background-color: #464646;
+}
+
+img[src="img/logo-footer.png"]:hover{
+	opacity: 0.6;
+}
+
+.main-footer-logo:active{
+	opacity: 0.3;
+}
+
+.main-footer ul{
+	list-style: none;
+}
+
+.main-footer-interaction a{
+	color: white;
+	opacity: 0.7;
+	letter-spacing: 0.01em;
+}
+
+.main-footer-interaction a:hover{
+	opacity: 1;
+}
+
+.main-footer-interaction a:active{
+	opacity: 0.3;
+}
+
+.main-footer-menu a{
+	color: white;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+}
+
+.main-footer-menu a:hover{
+	opacity: 0.6;
+}
+
+.main-footer-menu a:active{
+	opacity: 0.3;
+}
+
+.main-footer-adress,
+.main-footer-phone{
+	color: white;
+	letter-spacing: 0;
+}
+
+.socials{
+	list-style: none;
+}
+
+.socials a{
+	background-color: white;
+	opacity: 0.3;
+}
+
+.socials a:active{ /*Актив не получился? */
+	background-color: white;
+	opacity: 0.1;
+}
+
+.socials a:hover{
+	background-color: white;
+	opacity: 0.6;
+}
+
+.copyright a:hover{
+	opacity: 0.6;
+}
+.copyright a:active{
+	opacity: 0.3;
+}
+
+/*catalog */
+.page-title{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 48px;
+	color: black;
+	letter-spacing: 0.01em;
+}
+
+.breadcrumbs{
+	list-style: none;
+}
+
+.breadcrumbs a{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	color: #b2b2b2;
+}
+
+.breadcrumbs a:hover{
+	color: #666666;
+}
+
+.breadcrumbs a:active{
+	color: #8e8e8e;
+}
+
+.filters strong,
+.catalog strong{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.filters fieldset{
+	border: none;
+}
+
+.filters legend{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+}
+.filters ul{
+	list-style: none;
+	line-height: 40px;
+	color: black;
+}
+
+.filters li{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* у фильтра при наведении на чекбоксы и радио красятся только декоративные элементы, только у дисабледа меняется цвет
+как тогда правильно сделать тут ховер и эктив */
+/* ставлю disbled в разметке, но цвет текста не меняется */
+.filter-option:disabled{
+	opacity: 0.25;
+} 
+
+.filters-button{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: auto;
+	color: black;
+	background-color: #f0c52e;
+	text-transform: uppercase;
+	border: transparent;
+	letter-spacing: 0.2em;
+}
+.filters-button:hover{
+	color: #a88a20;
+}
+
+.catalog-list{
+	list-style: none;
+}
+
+.catalog-item{
+	background-color: #eeeeee;
+}
+
+.catalog-item h3{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+}
+
+.catalog-item-price{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 300;
+	color: #464646;
+}
+
+.catalog-button{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+	background-color: #f0c52e;
+	text-transform: uppercase;
+	border: transparent;
+	letter-spacing: 0.2em;
+}
+
+.catalog-button:hover{
+	color: #a88a20;
+}
+
+.catalog-add-compare{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	color: black;
+	opacity: 0.5;
+}
+
+.catalog-add-compare:hover{
+	opacity: 1;
+}
+
+.catalog-add-compare:active{
+	opacity: 0.2;
+}

@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Девайс</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 	<header class="main-header">
@@ -11,7 +14,7 @@
 		</a>
 		<nav class="main-nav">
 			<form action="https://echo.htmlacademy.ru" method="get">
-				<input type="text" name="search">
+				<input type="text" name="search" placeholder="Поиск по сайту">
 				<!-- По стайлгайду тут еще кнопка "найти" при фокусе на инпут -->
 				<button class="form-search" type=button>Найти</button>
 			</form>
@@ -23,16 +26,17 @@
 			</ul>
 			<ul class="interaction-menu">
 				<li><a href="#">Каталог товаров</a>
-					<ul>
+					<!-- добавил класс catalog-menu, чтобы назначить стили этим 3ем спискам -->
+					<ul class="catalog-menu">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="catalog.html">Моноподы для селфи</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
-					<ul>
+					<ul class="catalog-menu">
 						<li><a href="#">Фитнес-браслеты</a></li>
 						<li><a href="#">Умные часы</a></li>
 					</ul>
-					<ul>
+					<ul class="catalog-menu">
 						<li><a href="#">Квадрокоптеры</a></li>
 					</ul>				
 				</li>
@@ -121,11 +125,16 @@
 		<section class="catalog">
 			<h2 class="visually-hidden">Сортировка и список моноподов</h2>
 			<div class="sort">
-				<strong>Сортировка</strong>
+				<strong>Сортировка:</strong>
 				<ul class="sort-list">
 					<li class="sort-item"><a href="#">По цене</a></li>
 					<li class="sort-item"><a href="#">По типу</a></li>
 					<li class="sort-item"><a href="#">По популярности</a></li>
+				</ul>
+				<!-- добавил список для треугольников -->
+				<ul class="sort-buttons">
+					<li class="sort-up"><a href="#">Вверх</a></li>
+					<li class="sort-down"><a href="#">Вниз</a></li>
 				</ul>
 			</div>
 			<ul class="catalog-list">
@@ -219,9 +228,9 @@
 
 		<div class="main-footer-bottom">
 			<ul class="socials">
-				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке"></a></li>
-				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме"></a></li>
-				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере"></a></li>
+				<li><a href="#" class="social-btn social-btn-fb">Фейсбук</a></li>
+				<li><a href="#" class="social-btn social-btn-ig">Инстаграмм</a></li>
+				<li><a href="#" class="social-btn social-btn-tw">Твиттер</a></li>
 			</ul>
 			<div class="copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
