@@ -1,28 +1,28 @@
 @font-face{
 	font-family: 'Open Sans';
-	src: url('../fonts/opensanslight.woff'),
-		 url('../fonts/opensanslight.woff2');
+	src: url('../fonts/opensanslight.woff2'),
+		 url('../fonts/opensanslight.woff');
 	font-weight: 300; /* 300 = light */
 }
 
 @font-face{
 	font-family: 'Open Sans';
-	src: url('../fonts/opensans.woff'),
-		 url('../fonts/opensans.woff2');
+	src: url('../fonts/opensans.woff2'),
+		 url('../fonts/opensans.woff');
 	font-weight: 400; /* 400 = regular */
 }
 
 @font-face{
 	font-family: 'Gilroy';
-	src: url('../fonts/gilroyextrabold.woff'),
-		 url('../fonts/gilroyextrabold.woff2');
+	src: url('../fonts/gilroyextrabold.woff2'),
+		 url('../fonts/gilroyextrabold.woff');
 	font-weight: 800; /* 800 = extra-bold */
 }
 
 @font-face{
 	font-family: 'Gilroy';
-	src: url('../fonts/gilroylight.woff'),
-		 url('../fonts/gilroylight.woff2');
+	src: url('../fonts/gilroylight.woff2'),
+		 url('../fonts/gilroylight.woff');
 	font-weight: 300; /* 300 = light */
 }
 
@@ -95,7 +95,7 @@ a{
 /* с блоком инпута правильно не знаю как поступать (забыл что пока мы делаем только базовую стиизацию)*/
 .form-input{
 	background-color: #f7e296;
-	border: 0px;
+	border: none;
 	opacity: 0.3;
 }
 
