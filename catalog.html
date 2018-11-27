@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Девайс</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -14,9 +13,8 @@
 		</a>
 		<nav class="main-nav">
 			<form action="https://echo.htmlacademy.ru" method="get">
-				<input type="text" name="search" placeholder="Поиск по сайту">
-				<!-- По стайлгайду тут еще кнопка "найти" при фокусе на инпут -->
-				<button class="form-search" type=button>Найти</button>
+				<input class="form-input" type="text" name="search" placeholder="Поиск по сайту">
+				<button class="form-search" type="submit">Найти</button>
 			</form>
 			<ul class="user-menu">
 				<li><a href="#">Валентин Петухов</a></li>
@@ -25,18 +23,18 @@
 				<li><a href="#">Корзина</a></li>
 			</ul>
 			<ul class="interaction-menu">
-				<li><a href="#">Каталог товаров</a>
+				<li class="menu"><a href="#">Каталог товаров</a>
 					<!-- добавил класс catalog-menu, чтобы назначить стили этим 3ем спискам -->
-					<ul class="catalog-menu">
+					<ul class="sub-menu">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="catalog.html">Моноподы для селфи</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
-					<ul class="catalog-menu">
+					<ul class="sub-menu">
 						<li><a href="#">Фитнес-браслеты</a></li>
 						<li><a href="#">Умные часы</a></li>
 					</ul>
-					<ul class="catalog-menu">
+					<ul class="sub-menu">
 						<li><a href="#">Квадрокоптеры</a></li>
 					</ul>				
 				</li>
@@ -72,31 +70,31 @@
 						<li class="filter-option">
 							<label>
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="black" checked>
-								Черный
+								<span>Черный</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="white">
-								Белый
+								<span>Белый</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="blue" checked>
-								Синий
+								<span>Синий</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="red" checked>
-								Красный
+								<span>Красный</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pink">
-								Розовый
+								<span>Розовый</span>
 							</label>
 						</li>
 					</ul>
@@ -107,13 +105,13 @@
 						<li class="filter-option">
 							<label>
 								<input type="radio" class="visually-hidden filter-input filter-input-radio" name="choice" value="yes" checked>
-								Есть
+								<span>Есть</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
 								<input type="radio" class="visually-hidden filter-input filter-input-radio" name="choice" value="no">
-								Нет
+								<span>Нет</span>
 							</label>
 						</li>
 					</ul>
@@ -205,7 +203,7 @@
 		<div class="main-footer-top">
 			<div class="main-footer-logo">
 				<a href="index.html">
-					<img src="img/logo-footer.png" alt="Логотип сайта Девайс" width="163" height="36">
+					<img class="logo" src="img/logo-footer.png" alt="Логотип сайта Девайс" width="163" height="36">
 				</a>
 			</div>
 			<ul class="main-footer-interaction">
@@ -228,9 +226,9 @@
 
 		<div class="main-footer-bottom">
 			<ul class="socials">
-				<li><a href="#" class="social-btn social-btn-fb">Фейсбук</a></li>
-				<li><a href="#" class="social-btn social-btn-ig">Инстаграмм</a></li>
-				<li><a href="#" class="social-btn social-btn-tw">Твиттер</a></li>
+				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке"></a></li>
+				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме"></a></li>
+				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере"></a></li>
 			</ul>
 			<div class="copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss">

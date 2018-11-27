@@ -1,12 +1,28 @@
 @font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/opensanslight.woff'),
+		 url('../fonts/opensanslight.woff2');
+	font-weight: 300; /* 300 = light */
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/opensans.woff'),
+		 url('../fonts/opensans.woff2');
+	font-weight: 400; /* 400 = regular */
+}
+
+@font-face{
 	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy-ExtraBold.otf');
+	src: url('../fonts/gilroyextrabold.woff'),
+		 url('../fonts/gilroyextrabold.woff2');
 	font-weight: 800; /* 800 = extra-bold */
 }
 
 @font-face{
 	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy-Light.otf');
+	src: url('../fonts/gilroylight.woff'),
+		 url('../fonts/gilroylight.woff2');
 	font-weight: 300; /* 300 = light */
 }
 
@@ -56,7 +72,7 @@ a{
 	letter-spacing: 0.2em;
 }
 
-.catalog-menu{
+.sub-menu{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 15px;
 	line-height: 36px;
@@ -77,11 +93,12 @@ a{
 }
 
 /* с блоком инпута правильно не знаю как поступать (забыл что пока мы делаем только базовую стиизацию)*/
-.main-nav input[type="text"]{
+.form-input{
 	background-color: #f7e296;
-	border: transparent;
+	border: 0px;
 	opacity: 0.3;
 }
+
 .form-search{
 	visibility: hidden;
 }
@@ -106,7 +123,7 @@ a{
 	color: rgba(255,255,255, 0.3); 
 }
 
-.main-nav input[type="text"]:focus ~ .form-search{
+.form-input:focus ~ .form-search{
 	visibility: visible;
 
 	font-family: 'Open Sans', 'Arial', sans-serif;
@@ -174,11 +191,11 @@ h2{
 	background-color: #464646;
 }
 
-img[src="img/logo-footer.png"]:hover{
+.logo:hover{
 	opacity: 0.6;
 }
 
-.main-footer-logo:active{
+.logo:active{
 	opacity: 0.3;
 }
 
@@ -315,10 +332,8 @@ img[src="img/logo-footer.png"]:hover{
 	font-size: 14px;
 }
 
-/* у фильтра при наведении на чекбоксы и радио красятся только декоративные элементы, только у дисабледа меняется цвет
-как тогда правильно сделать тут ховер и эктив */
-/* ставлю disbled в разметке, но цвет текста не меняется */
-.filter-option:disabled{
+
+.filter-input:disabled ~ span{
 	opacity: 0.25;
 } 
 

@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Девайс</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -14,9 +13,8 @@
 		</a>
 		<nav class="main-nav">
 			<form action="https://echo.htmlacademy.ru" method="get">
-				<input type="text" name="search" placeholder="Поиск по сайту">
-				<!-- По стайлгайду тут еще кнопка "найти" при фокусе на инпут -->
-				<button class="form-search" type=button>Найти</button>
+				<input class="form-input" type="text" name="search" placeholder="Поиск по сайту">
+				<button class="form-search" type="submit">Найти</button>
 			</form>
 			<ul class="user-menu">
 				<li><a href="#">Войти</a></li>
@@ -24,18 +22,17 @@
 				<li><a href="#">Корзина</a></li>
 			</ul>
 			<ul class="interaction-menu">
-				<li><a href="catalog.html">Каталог товаров</a>
-					<!-- добавил класс catalog-menu, чтобы назначить стили этим 3ем спискам -->
-					<ul class="catalog-menu">
+				<li class="menu"><a href="catalog.html">Каталог товаров</a>
+					<ul class="sub-menu">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="catalog.html">Моноподы для селфи</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
-					<ul class="catalog-menu">
+					<ul class="sub-menu">
 						<li><a href="#">Фитнес-браслеты</a></li>
 						<li><a href="#">Умные часы</a></li>
 					</ul>
-					<ul class="catalog-menu">
+					<ul class="sub-menu">
 						<li><a href="#">Квадрокоптеры</a></li>
 					</ul>
 				</li>
@@ -47,7 +44,6 @@
 	</header>
 
 	<main>
-		<!-- Просто в секциях понаставил visually-hidden-->
 		<section class="products">
 			<h2 class="visually-hidden">Краткая информация о продуктах</h2>
 			<div class="products-item">
@@ -194,7 +190,7 @@
 	<footer class="main-footer">
 		<div class="main-footer-top">
 			<div class="main-footer-logo">
-				<img src="img/logo-footer.png" alt="Логотип сайта Девайс" width="163" height="36">
+				<img class="logo" src="img/logo-footer.png" alt="Логотип сайта Девайс" width="163" height="36">
 			</div>
 			<ul class="main-footer-interaction">
 				<li><a href="#">Войти</a></li>
@@ -214,10 +210,10 @@
 		</div>
 
 		<div class="main-footer-bottom">
-			<ul class="socials"> <!--Удалил area label's чтоб удобнее было стилизовать-->
-				<li><a href="#" class="social-btn social-btn-fb">Фейсбук</a></li>
-				<li><a href="#" class="social-btn social-btn-ig">Инстаграмм</a></li>
-				<li><a href="#" class="social-btn social-btn-tw">Твиттер</a></li>
+			<ul class="socials"> 
+				<li><a href="#" class="social-btn social-btn-fb" aria-label="Девайс в фейсбуке"></a></li>
+				<li><a href="#" class="social-btn social-btn-ig" aria-label="Девайс в инстаграмме"></a></li>
+				<li><a href="#" class="social-btn social-btn-tw" aria-label="Девайс в твиттере"></a></li>
 			</ul>
 			<div class="copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
