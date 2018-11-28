@@ -143,6 +143,157 @@ h2{
 	letter-spacing: 0.01em;
 }
 
+.products-item b{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 56px;
+	letter-spacing: 0.01em;
+	color: black;
+}
+
+.products-item p{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.01em;
+	color: #464646;
+}
+
+.products-item a{
+	background-color: #f0c52e;
+	color: black;
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase; 
+	text-align: center;
+}
+
+.products-item a:active{
+	color: #a88a20;
+}
+
+tr:first-child td{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.01em;
+}
+
+tr:last-child td{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.01em;
+	color: #464646;
+}
+
+/* тут получается надо разметку менять? (например, добавить див в каждую ссылку, чтоб блокам div задавать цвет и фоновую картинку отдельно от текста 
+и потом на ссылку навешивать свойства как :hover, :active* или как лучше сделать */
+
+.categories-list{
+	list-style: none;
+}
+
+.categories-list a{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+	letter-spacing: 0.01em;
+}
+
+.categories-list a:hover{
+	color: black;
+}
+
+.categories-list a:active{
+	color: #b2b2b2;
+}
+
+.service{
+	background-color: #e5e5e5;
+}
+
+.service-list,
+.service-description{
+	list-style: none;
+}
+
+.service-list button{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	color: black;
+	text-transform: uppercase;
+	background-color: #f0c52e;
+	border: none; 
+}
+
+.service-list button:hover{
+
+}
+
+.service-list button:active{
+	color: #f7e184;
+	background-color: black;
+	outline: none;
+}
+
+.image-delivery{
+	width: 136px;
+	height: 164px;
+	background-image: url('../img/delivery.svg');
+	background-repeat: no-repeat; 
+	background-position: 0 0;
+}
+
+.image-guaranty{
+	width: 171px;
+	height: 194px;
+	background-image: url('../img/warranty.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.image-credit{
+	width: 156px;
+	height: 186px;
+	background-image: url('../img/credit.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.partners-list{
+	list-style: none;
+}
+
+.dji-logo:hover{
+	background: url('../img/logo-1-color.png') no-repeat 0 0;
+}
+
+.sp-logo:hover{
+	background: url('../img/logo-2-color.png') no-repeat 0 0;
+}
+
+.gopro-logo:hover{
+	background: url('../img/logo-3-color.png') no-repeat 0 0;
+}
+
+.vivo-logo:hover{
+	background: url('../img/logo-4-color.png') no-repeat 0 0;
+}
+
 .about p{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 15px;
@@ -151,7 +302,6 @@ h2{
 	color: #464646;
 	letter-spacing: 0;
 }
-
 
 .about-list,
 .about-company-list{
@@ -178,8 +328,8 @@ h2{
 	letter-spacing: 0.2em;
 }
 
-.about-button:hover,
-.contacts-button:hover{
+.about-button:active,
+.contacts-button:active{
 	color: #a88a20;
 }
 
@@ -294,6 +444,10 @@ h2{
 	color: #8e8e8e;
 }
 
+.filters{
+	background-color: #eeeeee;
+}
+
 .filters strong,
 .catalog strong{
 	font-family: 'Gilroy', 'Arial', sans-serif;
@@ -344,12 +498,74 @@ h2{
 	border: transparent;
 	letter-spacing: 0.2em;
 }
-.filters-button:hover{
+
+.filters-button:active{
 	color: #a88a20;
+}
+
+.sort{
+	background-color: #eeeeee;
+}
+
+.sort-list,
+.sort-buttons{
+	list-style: none;
+}
+
+.sort-list{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #b2b2b2;
+	letter-spacing: 0;
+}
+
+.sort-list a:hover{
+	color: #666666;
+}
+
+.sort-list a:active{
+	color: black;
 }
 
 .catalog-list{
 	list-style: none;
+}
+
+.sort-current{
+	color: black;
+}
+
+/* прописал inline-block, чтоб было видно хотябы что треугольники вставил */
+.sort-up a{
+	background: url('../img/icon-up-dir.svg') no-repeat 0 0;
+	width: 11px;
+	height: 10px;
+	display: inline-block;
+	opacity: 0.2;
+}
+
+.sort-down a{
+	background: url('../img/icon-down-dir.svg') no-repeat 0 0;
+	width: 11px;
+	height: 10px;
+	display: inline-block;
+	opacity: 0.2;
+}
+
+.sort-down .sort-current{
+	opacity: 1;
+}
+
+.sort-down a:hover,
+.sort-up a:hover{
+	opacity: 0.4;
+}
+
+.sort-down a:active,
+.sort-up a:active{
+	opacity: 1;
 }
 
 .catalog-item{
@@ -382,7 +598,7 @@ h2{
 	letter-spacing: 0.2em;
 }
 
-.catalog-button:hover{
+.catalog-button:active{
 	color: #a88a20;
 }
 
@@ -401,4 +617,54 @@ h2{
 
 .catalog-add-compare:active{
 	opacity: 0.2;
+}
+
+.pagination{
+	background-color: #eeeeee;
+	list-style: none;
+}
+
+.pagination a{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #a4a4a4;
+}
+
+.pagination a:hover{
+	color: black;
+	opacity: 0.6;
+}
+
+.pagination a:active{
+	color: black;
+	opacity: 1;
+}
+
+.back a,
+.forward a{
+	color: black;
+}
+
+.back a:hover,
+.forward a:hover{
+	background-color: #d9d9d9;
+}
+
+.back a:active,
+.forward a:active{
+	background-color: #d9d9d9;
+	color: #979797;
+}
+
+.pagination-item .pagination-current{
+	color: black;
+}
+
+.user-logout,
+.main-footer-interaction .footer-logout{
+	opacity: 0.3;
 }

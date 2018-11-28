@@ -18,13 +18,12 @@
 			</form>
 			<ul class="user-menu">
 				<li><a href="#">Валентин Петухов</a></li>
-				<li><a href="#">Выйти</a></li>
+				<li><a href="#" class="user-logout">Выйти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>
 			</ul>
 			<ul class="interaction-menu">
 				<li class="menu"><a href="#">Каталог товаров</a>
-					<!-- добавил класс catalog-menu, чтобы назначить стили этим 3ем спискам -->
 					<ul class="sub-menu">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -46,7 +45,6 @@
 	</header>
 
 	<main>
-		<!-- В каталоге уже было расставлено несколько visually-hidden's, не нашел где можно еще улучшить доступность в каталоге из доп.задания-->
 		<h1 class="page-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
@@ -125,14 +123,14 @@
 			<div class="sort">
 				<strong>Сортировка:</strong>
 				<ul class="sort-list">
-					<li class="sort-item"><a href="#">По цене</a></li>
+					<li class="sort-item"><a href="#" class="sort-current">По цене</a></li>
 					<li class="sort-item"><a href="#">По типу</a></li>
 					<li class="sort-item"><a href="#">По популярности</a></li>
 				</ul>
 				<!-- добавил список для треугольников -->
 				<ul class="sort-buttons">
-					<li class="sort-up"><a href="#">Вверх</a></li>
-					<li class="sort-down"><a href="#">Вниз</a></li>
+					<li class="sort-up"><a href="#"></a></li>
+					<li class="sort-down"><a class="sort-current" href="#"></a></li>
 				</ul>
 			</div>
 			<ul class="catalog-list">
@@ -191,7 +189,7 @@
 			</ul>
 			<ul class="pagination">
 				<li class="pagination-item back"><a href="#">Назад</a></li>
-				<li class="pagination-item"><a href="#">1</a></li>
+				<li class="pagination-item"><a href="#" class="pagination-current">1</a></li>
 				<li class="pagination-item"><a href="#">2</a></li>
 				<li class="pagination-item"><a href="#">3</a></li>
 				<li class="pagination-item forward"><a href="#">Вперед</a></li>
@@ -208,7 +206,7 @@
 			</div>
 			<ul class="main-footer-interaction">
 				<li><a href="#">Валентин Петухов</a></li>
-				<li><a href="#">Выйти</a></li>
+				<li><a href="#" class="footer-logout">Выйти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>
 			</ul>
