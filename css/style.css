@@ -177,7 +177,7 @@ h2{
 	color: #a88a20;
 }
 
-tr:first-child td{
+.stats{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 300;
 	color: black;
@@ -186,7 +186,7 @@ tr:first-child td{
 	letter-spacing: 0.01em;
 }
 
-tr:last-child td{
+.properties{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 13px;
@@ -194,9 +194,6 @@ tr:last-child td{
 	letter-spacing: 0.01em;
 	color: #464646;
 }
-
-/* тут получается надо разметку менять? (например, добавить див в каждую ссылку, чтоб блокам div задавать цвет и фоновую картинку отдельно от текста 
-и потом на ссылку навешивать свойства как :hover, :active* или как лучше сделать */
 
 .categories-list{
 	list-style: none;
@@ -238,10 +235,6 @@ tr:last-child td{
 	text-transform: uppercase;
 	background-color: #f0c52e;
 	border: none; 
-}
-
-.service-list button:hover{
-
 }
 
 .service-list button:active{
