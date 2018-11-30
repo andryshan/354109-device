@@ -663,6 +663,12 @@ h2{
 }
 
 /* Cетки */
+.container{
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;	
+}
+
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -765,17 +771,12 @@ h2{
 }
 
 
-.container{
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 20px;	
-}
-
 /* Сетки Футер */
 
-.main-footer .container{
+.main-footer{
 	display: flex;
-	flex-direction: column;
+	margin: 0;
+	padding: 0;	
 }
 
 .main-footer-top {
@@ -806,6 +807,7 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 }
 
 .main-footer-adress{
@@ -842,7 +844,6 @@ h2{
 	width: 160px;
 	display: flex;
 	background-color: red;
-	opacity: 0.1;
 }
 
 .copyright{
@@ -865,17 +866,27 @@ h2{
 	margin-bottom: 50px;
 }
 
+/*Проблема правильно подобрать обертки, чтобы цвета на фоне тоже располоались как надо */
+
+/* ОБЕРТКА ДЛЯ ФИЛЬТРА И СОРТИРОВКИ С КАТАЛОГОМ ЧТОБЫ ЗАДАТЬ FLEX СЕКЦИЯМ*/
+.wrapper{
+	display: flex;
+}
+
 /* Контеинер для внутренней страницы */
 .container-catalog{
 	margin: 0 auto;
 	padding-left: 60px;
 	width: 1100px;
+	
 }
 
+/*БЛОК ФИЛЬТРА */
 .filters{
 	width: 200px;
 	margin: 0;
 	padding: 0;
+	margin-right: auto;
 }
 
 .filters ul{
@@ -883,8 +894,61 @@ h2{
 	padding: 0;
 }
 
+
+/*ГЛАВНЫЙ БЛОК КАТАЛОГА */
 .catalog{
 	margin: 0;
 	padding: 0;
 	width: 760px;
+}
+
+/* ГОРИЗОНТАЛЬНЫЙ БЛОК СОРТИРОВКИ */
+.sort{
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	margin-bottom: 69px;
+	display: flex;
+}
+
+.sort-list{
+	margin: 0;
+	padding: 0;
+}
+
+.sort-buttons{
+	margin: 0;
+	padding: 0;
+}
+
+/* ЛИСТ ПРОДУКТОВ */
+.catalog-list{
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	margin-bottom: 38px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ПРОДУКТ ПО ОТДЕЛЬНОСТИ */
+.catalog-item{
+	width: 360px;
+	margin: 0;
+	padding: 0;
+	margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n){
+	margin-right: 0px;
+}
+
+/* ПАГИНАЦИЯ */
+.pagination{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	margin-bottom: 77px;
 }
