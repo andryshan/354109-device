@@ -748,7 +748,7 @@ h2{
 
 /* Сетки "О нас и контакты"" */
 
-.wrapper-info{
+.wrapper-about{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 80px;
@@ -944,7 +944,7 @@ h2{
 	margin-right: 0px;
 }
 
-/* ПАГИНАЦИЯ */
+/* ПАГИНАЦИЯ CATALOG.HTML*/
 .pagination{
 	display: flex;
 	margin: 0;
@@ -952,3 +952,70 @@ h2{
 	width: 760px;
 	margin-bottom: 77px;
 }
+
+/* PRODUCTS INDEX.HTML */
+.products-item{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper-image{
+	width: 440px;
+}
+
+.wrapper-info{
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Категории INDEX.HTML*/
+.categories-list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: ???;
+}
+
+/* ДОСТАВКА ГАРАНТИЯ КРЕДИТ INDEX.HTML*/
+.service{
+	margin: 0;
+	padding: 0;
+}
+
+.service .container{
+	display: flex;
+	margin-bottom: 94px;
+}
+
+.service-list,
+.service-description{
+	margin: 0;
+	padding: 0;
+}
+
+.service-list{
+	width: 300px;
+	margin-right: 100px;
+}
+
+.service-description{
+	width: 460px;
+	margin-right: 40px;
+}
+
+/* СЕТКА ДЛЯ 3-X КАРТИНОК, В РАЗМЕТКЕ ПОКА ИХ НЕТ (WIDTH 260PX)!!!*/
+
+/* ПАРТНЕРЫ INDEX.HTML */
+.partners-list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 94px;
+}
+

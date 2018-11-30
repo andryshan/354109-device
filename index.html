@@ -8,7 +8,7 @@
 	</head>
 	<body>
 	<div class="container">
-		<header class="main-header">
+		<header class="main-header container">
 			<div class="container-inner">
 				<a class="main-header-logo">
 					<img src="img/logo.png" alt="Логотип сайта Девайс" width="164" height="36">
@@ -50,62 +50,74 @@
 	</div>
 
 	<main>
-		<section class="products">
+		<section class="products container-inner">
 			<h2 class="visually-hidden">Краткая информация о продуктах</h2>
 			<div class="products-item">
-				<img src="img/slider-1.png" alt="Длинная селфи палка" width="384" height="486">
-				<b>Делай селфи,как Бен Стиллер!</b>
-				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-				<a href="#">Подробнее</a>
-				<table>
-					<tr class="stats">
-						<td>8,5 м</td>
-						<td>5 кг</td>
-						<td>Карбон</td>
-					</tr>
-					<tr class="properties">
-						<td>Длина палки</td>
-						<td>Вес палки</td>
-						<td>Материал</td>
-					</tr>
-				</table>
+				<div class="wrapper-image">
+					<img src="img/slider-1.png" alt="Длинная селфи палка" width="384" height="486">
+				</div>
+				<div class="wrapper-info">
+					<b>Делай селфи,как Бен Стиллер!</b>
+					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a href="#">Подробнее</a>
+					<table>
+						<tr class="stats">
+							<td>8,5 м</td>
+							<td>5 кг</td>
+							<td>Карбон</td>
+						</tr>
+						<tr class="properties">
+							<td>Длина палки</td>
+							<td>Вес палки</td>
+							<td>Материал</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		
 			<div class="products-item">
-				<img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
-				<b>Худеем правильно!</b>
-				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-				<a href="#">Подробнее</a>
-				<table>
-					<tr class="stats">
-						<td>48 часов</td>
-					</tr>
-					<tr class="properties">
-						<td>Без подзарядки</td>
-					</tr>
-				</table>
+				<div class="wrapper-image">
+					<img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+				</div>
+				<div class="wrapper-info">
+					<b>Худеем правильно!</b>
+					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<a href="#">Подробнее</a>
+					<table>
+						<tr class="stats">
+							<td>48 часов</td>
+						</tr>
+						<tr class="properties">
+							<td>Без подзарядки</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 
 			<div class="products-item">
-				<img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
-				<b>Порхает как бабочка, жалит как пчела!</b>
-				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-				<a href="#">Подробнее</a>
-				<table>
-					<tr class="stats">
-						<td>800 м</td>
-						<td>50 м</td>
-					</tr>
-					<tr class="properties">
-						<td>Дальность полета</td>
-						<td>Радиус поражения</td>
-					</tr>
-				</table>
+				<div class="wrapper-image">
+					<img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+				</div>
+					<div class="wrapper-info">
+					<b>Порхает как бабочка, жалит как пчела!</b>
+					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+					<a href="#">Подробнее</a>
+					<table>
+						<tr class="stats">
+							<td>800 м</td>
+							<td>50 м</td>
+						</tr>
+						<tr class="properties">
+							<td>Дальность полета</td>
+							<td>Радиус поражения</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 
 		</section>
 		
-		<section class="categories">
+		<section class="categories container">
 			<h2 class="visually-hidden">Категории товаров</h2>
 			<ul class="categories-list">
 				<li class="categories-item"><a href="#">Виртуальная реальность</a></li>
@@ -119,6 +131,7 @@
 		</section>
 		
 		<section class="service">
+			<div class="container">
 			<ul class="service-list">
 				<li class="service-item"><button type="button">Доставка</button></li>
 				<li class="service-item"><button type="button">Гарантия</button></li>
@@ -138,9 +151,10 @@
 					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</li>
 			</ul>
+			</div>
 		</section>
 
-		<section class="partners">
+		<section class="partners container">
 			<h2 class="visually-hidden">Список партнеров</h2>
 			<ul class="partners-list">
 				<li class="partners-item">
@@ -159,7 +173,7 @@
 		</section>
 
 		<div class="container">
-			<div class="wrapper-info">
+			<div class="wrapper-about">
 				<section class="about">
 					<h2 class="visually-hidden">Информация о компании</h2>
 					<h2>О нас</h2>
