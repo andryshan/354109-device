@@ -661,3 +661,230 @@ h2{
 .main-footer-interaction .footer-logout{
 	opacity: 0.3;
 }
+
+/* Cетки */
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Сетка шапки */
+
+.main-header{
+	margin: 0;
+	padding: 0;
+}
+
+.container-inner{
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.nav-top{
+	display: flex;
+	margin-bottom: 45px; /* отсупы вниз тоже не поучаются */
+}
+
+.nav-form{
+	width: 440px;
+}
+
+.user-menu{
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	display: flex;
+}
+
+.login{
+	width: 80px;
+	margin-right: 200px;
+}
+
+.compare{
+	width: 100px;
+	margin-right: 20px;
+}
+
+.basket{
+	width: 100px;
+	margin-right: 0;
+}
+
+/* шапка вообще не получиласть, не понимаю как взять отдельные блоки и выделить их */
+.interaction-menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu{
+	margin: 0;
+	padding: 0;
+}
+
+.sub-menu{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.menu ul{
+	width: 600px;
+}
+
+/* Сетки "О нас и контакты"" */
+
+.wrapper-info{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.about-list{
+	margin: 0;
+	padding: 0;
+	width: 480px;
+}
+
+.about-company-list{
+	margin: 0;
+	padding: 0;
+	width: 480px;
+}
+
+.contacts{
+	width: 560px;
+}
+
+
+.container{
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;	
+}
+
+/* Сетки Футер */
+
+.main-footer .container{
+	display: flex;
+	flex-direction: column;
+}
+
+.main-footer-top {
+	display: flex;
+	padding: 65px 0 0 0;
+	justify-content: space-between;
+	margin-bottom: 0px;
+	align-items: center;
+	/*не понимаю как правильно выбрать размер margin-bottom*/
+}
+
+.main-footer-logo{
+	margin: 0;
+	width: 180px;
+}
+
+.main-footer-interaction{
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	/* 500px для логаута из каталога */
+}
+
+
+.main-footer-center{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-footer-adress{
+	width: 210px;
+}
+
+.main-footer-menu{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 430px;
+}
+
+.main-footer-phone{
+	width: 200px;
+	text-align: right;
+}
+
+.main-footer-bottom{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 65px;
+}
+
+
+.footer-line{
+	/*как поступить с декоративной линией в футере? */
+}
+
+.socials{
+	margin: 0;
+	padding: 0;
+	width: 160px;
+	display: flex;
+	background-color: red;
+	opacity: 0.1;
+}
+
+.copyright{
+	width: 60px;
+	text-align: right;
+}
+
+
+/* Каталог и хлебные крошки сетка */
+.page-title{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
+}
+
+.breadcrumbs{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+/* Контеинер для внутренней страницы */
+.container-catalog{
+	margin: 0 auto;
+	padding-left: 60px;
+	width: 1100px;
+}
+
+.filters{
+	width: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+.filters ul{
+	margin: 0;
+	padding: 0;
+}
+
+.catalog{
+	margin: 0;
+	padding: 0;
+	width: 760px;
+}
