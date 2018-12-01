@@ -33,12 +33,18 @@ body{
 	background-color: #ffffff;
 }
 
-.main-header{
-	background-color: #f7e296;
-}
-
 a{
 	text-decoration: none;
+}
+
+.container{
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;	
+}
+
+.main-header{
+	background-color: #f7e296;
 }
 
 .user-menu{
@@ -47,6 +53,10 @@ a{
 	font-weight: 300;
 	color: #000000;
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	display: flex;
 }
 
 .interaction-menu,
@@ -66,6 +76,10 @@ a{
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .sub-menu{
@@ -76,6 +90,8 @@ a{
 	color: #000000;
 	text-transform: none;
 	letter-spacing: 0.01em;
+	margin: 0;
+	padding: 0;
 }
 
 .main-nav a:hover,
@@ -98,6 +114,7 @@ a{
 .form-search{
 	visibility: hidden;
 }
+
 .form-search:hover{
 	visibility: visible;
 
@@ -134,13 +151,20 @@ a{
 	padding: 11px 20px;
 }
 
-h2{
+.paragraph{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
 	color: black;
 	letter-spacing: 0.01em;
+}
+
+.products-item{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .products-item b{
@@ -197,6 +221,11 @@ h2{
 
 .categories-list{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 205px;
 }
 
 .categories-list a{
@@ -218,11 +247,24 @@ h2{
 
 .service{
 	background-color: #e5e5e5;
+	margin: 0;
+	padding: 0;
 }
 
 .service-list,
 .service-description{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.service-list{
+	width: 300px;
+	margin-right: 100px;
+}
+
+.service-description{
+	width: 760px;
 }
 
 .service-list button{
@@ -269,6 +311,11 @@ h2{
 
 .partners-list{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 94px;
 }
 
 .dji-logo:hover{
@@ -285,6 +332,12 @@ h2{
 
 .vivo-logo:hover{
 	background: url('../img/logo-4-color.png') no-repeat 0 0;
+}
+
+.about{
+	margin: 0;
+	padding: 0;
+	width: 480px;
 }
 
 .about p{
@@ -305,7 +358,13 @@ h2{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
 	font-size: 15px;
-	/* размер шрифта в фотошопе не высвечивается почему то, видно баг в макете */
+	margin: 0;
+	padding: 0;
+	width: 480px;
+}
+
+.contacts{
+	width: 560px;
 }
 
 .about-button,
@@ -328,6 +387,10 @@ h2{
 
 .main-footer{
 	background-color: #464646;
+	display: flex;
+	margin: 0;
+	padding-top: 65px;
+	padding-bottom: 65px;
 }
 
 .logo:hover{
@@ -342,6 +405,13 @@ h2{
 	list-style: none;
 }
 
+.main-footer-interaction{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 480px;
+}
+
 .main-footer-interaction a{
 	color: white;
 	opacity: 0.7;
@@ -354,6 +424,14 @@ h2{
 
 .main-footer-interaction a:active{
 	opacity: 0.3;
+}
+
+.main-footer-menu{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	width: 440px;
 }
 
 .main-footer-menu a{
@@ -374,6 +452,14 @@ h2{
 	opacity: 0.3;
 }
 
+.main-footer-bottom{
+	display: flex;
+}
+
+.main-footer-adress{
+	width: 210px;
+}
+
 .main-footer-adress,
 .main-footer-phone{
 	color: white;
@@ -382,14 +468,21 @@ h2{
 
 .socials{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 160px;
+	display: flex;
+	margin-left: 500px;
+	margin-right: auto;
 }
 
 .socials a{
 	background-color: white;
 	opacity: 0.3;
+	border: 1px solid red;
 }
 
-.socials a:active{ /*Актив не получился? */
+.socials a:active{ 
 	background-color: white;
 	opacity: 0.1;
 }
@@ -399,6 +492,11 @@ h2{
 	opacity: 0.6;
 }
 
+.copyright{
+	width: 60px;
+	text-align: right;
+}
+
 .copyright a:hover{
 	opacity: 0.6;
 }
@@ -406,7 +504,6 @@ h2{
 	opacity: 0.3;
 }
 
-/*catalog */
 .page-title{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
@@ -414,10 +511,17 @@ h2{
 	line-height: 48px;
 	color: black;
 	letter-spacing: 0.01em;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
 }
 
 .breadcrumbs{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-bottom: 50px;
 }
 
 .breadcrumbs a{
@@ -439,6 +543,10 @@ h2{
 
 .filters{
 	background-color: #eeeeee;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	margin-right: auto;
 }
 
 .filters strong,
@@ -467,6 +575,8 @@ h2{
 	list-style: none;
 	line-height: 40px;
 	color: black;
+	margin: 0;
+	padding: 0;
 }
 
 .filters li{
@@ -498,11 +608,21 @@ h2{
 
 .sort{
 	background-color: #eeeeee;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	margin-bottom: 69px;
+	display: flex;
 }
 
 .sort-list,
 .sort-buttons{
 	list-style: none;
+}
+
+.sort-buttons{
+	margin: 0;
+	padding: 0;
 }
 
 .sort-list{
@@ -512,6 +632,8 @@ h2{
 	line-height: 18px;
 	color: #b2b2b2;
 	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .sort-list a:hover{
@@ -522,8 +644,21 @@ h2{
 	color: black;
 }
 
+.catalog{
+	margin: 0;
+	padding: 0;
+	width: 760px;
+}
+
 .catalog-list{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	margin-bottom: 38px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .sort-current{
@@ -563,6 +698,10 @@ h2{
 
 .catalog-item{
 	background-color: #eeeeee;
+	width: 360px;
+	margin: 0;
+	padding: 0;
+	margin-right: 40px;
 }
 
 .catalog-item h3{
@@ -571,6 +710,10 @@ h2{
 	font-size: 18px;
 	line-height: 24px;
 	color: black;
+}
+
+.catalog-item:nth-child(2n){
+	margin-right: 0;
 }
 
 .catalog-item-price{
@@ -615,6 +758,11 @@ h2{
 .pagination{
 	background-color: #eeeeee;
 	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	margin-bottom: 77px;
 }
 
 .pagination a{
@@ -662,13 +810,6 @@ h2{
 	opacity: 0.3;
 }
 
-/* Cетки */
-.container{
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 20px;	
-}
-
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -679,8 +820,6 @@ h2{
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
-/* Сетка шапки */
 
 .main-header{
 	margin: 0;
@@ -694,41 +833,11 @@ h2{
 
 .nav-top{
 	display: flex;
-	margin-bottom: 45px; /* отсупы вниз тоже не поучаются */
+	margin-bottom: 45px;
 }
 
 .nav-form{
 	width: 440px;
-}
-
-.user-menu{
-	margin: 0;
-	padding: 0;
-	width: 500px;
-	display: flex;
-}
-
-.login{
-	width: 80px;
-	margin-right: 200px;
-}
-
-.compare{
-	width: 100px;
-	margin-right: 20px;
-}
-
-.basket{
-	width: 100px;
-	margin-right: 0;
-}
-
-/* шапка вообще не получиласть, не понимаю как взять отдельные блоки и выделить их */
-.interaction-menu {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
 }
 
 .menu{
@@ -736,17 +845,9 @@ h2{
 	padding: 0;
 }
 
-.sub-menu{
-	margin: 0;
-	padding: 0;
-	
-}
-
 .menu ul{
 	width: 600px;
 }
-
-/* Сетки "О нас и контакты"" */
 
 .wrapper-about{
 	display: flex;
@@ -754,119 +855,27 @@ h2{
 	margin-bottom: 80px;
 }
 
-.about-list{
+.main-footer-top{
 	margin: 0;
 	padding: 0;
-	width: 480px;
-}
-
-.about-company-list{
-	margin: 0;
-	padding: 0;
-	width: 480px;
-}
-
-.contacts{
-	width: 560px;
-}
-
-
-/* Сетки Футер */
-
-.main-footer{
 	display: flex;
-	margin: 0;
-	padding: 0;	
-}
-
-.main-footer-top {
-	display: flex;
-	padding: 65px 0 0 0;
 	justify-content: space-between;
-	margin-bottom: 0px;
 	align-items: center;
-	/*не понимаю как правильно выбрать размер margin-bottom*/
 }
 
 .main-footer-logo{
 	margin: 0;
+	padding: 0;
 	width: 180px;
 }
 
-.main-footer-interaction{
-	margin: 0;
-	padding: 0;
-	width: 500px;
-	display: flex;
-	justify-content: space-between;
-	/* 500px для логаута из каталога */
-}
-
-
 .main-footer-center{
 	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: space-between;
-	
 }
-
-.main-footer-adress{
-	width: 210px;
-}
-
-.main-footer-menu{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	width: 430px;
-}
-
-.main-footer-phone{
-	width: 200px;
-	text-align: right;
-}
-
-.main-footer-bottom{
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 65px;
-}
-
-
-.footer-line{
-	/*как поступить с декоративной линией в футере? */
-}
-
-.socials{
-	margin: 0;
-	padding: 0;
-	width: 160px;
-	display: flex;
-	background-color: red;
-}
-
-.copyright{
-	width: 60px;
-	text-align: right;
-}
-
-
-/* Каталог и хлебные крошки сетка */
-.page-title{
-	margin: 0;
-	padding: 0;
-	margin-bottom: 27px;
-}
-
-.breadcrumbs{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	margin-bottom: 50px;
-}
-
-/*Проблема правильно подобрать обертки, чтобы цвета на фоне тоже располоались как надо */
 
 /* ОБЕРТКА ДЛЯ ФИЛЬТРА И СОРТИРОВКИ С КАТАЛОГОМ ЧТОБЫ ЗАДАТЬ FLEX СЕКЦИЯМ*/
 .wrapper{
@@ -878,87 +887,15 @@ h2{
 	margin: 0 auto;
 	padding-left: 60px;
 	width: 1100px;
-	
 }
 
-/*БЛОК ФИЛЬТРА */
-.filters{
-	width: 200px;
-	margin: 0;
-	padding: 0;
-	margin-right: auto;
+.container .main-header{
+	padding: 0 60px;
 }
 
-.filters ul{
-	margin: 0;
-	padding: 0;
-}
-
-
-/*ГЛАВНЫЙ БЛОК КАТАЛОГА */
-.catalog{
-	margin: 0;
-	padding: 0;
-	width: 760px;
-}
-
-/* ГОРИЗОНТАЛЬНЫЙ БЛОК СОРТИРОВКИ */
-.sort{
-	margin: 0;
-	padding: 0;
-	width: 760px;
-	margin-bottom: 69px;
-	display: flex;
-}
-
-.sort-list{
-	margin: 0;
-	padding: 0;
-}
-
-.sort-buttons{
-	margin: 0;
-	padding: 0;
-}
-
-/* ЛИСТ ПРОДУКТОВ */
-.catalog-list{
-	margin: 0;
-	padding: 0;
-	width: 760px;
-	margin-bottom: 38px;
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-/* ПРОДУКТ ПО ОТДЕЛЬНОСТИ */
-.catalog-item{
-	width: 360px;
-	margin: 0;
-	padding: 0;
-	margin-right: 40px;
-}
-
-.catalog-item:nth-child(2n){
-	margin-right: 0px;
-}
-
-/* ПАГИНАЦИЯ CATALOG.HTML*/
-.pagination{
-	display: flex;
-	margin: 0;
-	padding: 0;
-	width: 760px;
-	margin-bottom: 77px;
-}
-
-/* PRODUCTS INDEX.HTML */
-.products-item{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
+.container .products{
+	padding: 0 60px;
+	margin-bottom: 106px;
 }
 
 .wrapper-image{
@@ -971,51 +908,16 @@ h2{
 	flex-direction: column;
 }
 
-
-/* Категории INDEX.HTML*/
-.categories-list{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: ???;
-}
-
-/* ДОСТАВКА ГАРАНТИЯ КРЕДИТ INDEX.HTML*/
-.service{
-	margin: 0;
-	padding: 0;
-}
-
 .service .container{
 	display: flex;
 	margin-bottom: 94px;
 }
 
-.service-list,
-.service-description{
-	margin: 0;
-	padding: 0;
+.slider-hidden{
+	display: none;
 }
 
-.service-list{
-	width: 300px;
-	margin-right: 100px;
+.appointment-form,
+.modal{
+	display: none;
 }
-
-.service-description{
-	width: 460px;
-	margin-right: 40px;
-}
-
-/* СЕТКА ДЛЯ 3-X КАРТИНОК, В РАЗМЕТКЕ ПОКА ИХ НЕТ (WIDTH 260PX)!!!*/
-
-/* ПАРТНЕРЫ INDEX.HTML */
-.partners-list{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 94px;
-}
-
