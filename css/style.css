@@ -39,13 +39,13 @@ a{
 
 .container{
 	width: 1160px;
-	margin: 0 auto;
-	padding: 0 20px;	
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: auto;
+	margin-left: auto;	
 }
 
-.main-header{
-	background-color: #f7e296;
-}
+
 
 .user-menu{
 	font-size: 15px;
@@ -58,6 +58,12 @@ a{
 	width: 500px;
 	display: flex;
 }
+
+.interaction-menu > li:first-child{
+	width: 300px;
+}
+
+/*Как данной разметке обуернуть в микросетку с размером 500px ДОСТАВКА ГАРАНТИЯ КОНТАКТЫ */
 
 .interaction-menu,
 .interaction-menu ul{
@@ -77,9 +83,11 @@ a{
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	margin: 0;
-	padding: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	display: flex;
-	justify-content: space-between;
 }
 
 .sub-menu{
@@ -151,6 +159,7 @@ a{
 	padding: 11px 20px;
 }
 
+
 .paragraph{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
@@ -158,6 +167,7 @@ a{
 	line-height: 48px;
 	color: black;
 	letter-spacing: 0.01em;
+	margin: 0;
 }
 
 .products-item{
@@ -219,13 +229,21 @@ a{
 	color: #464646;
 }
 
+
+.categories-item{
+	padding-top: 200px;
+	width: 160px;
+
+}
+
 .categories-list{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 205px;
+	margin-bottom: 80px;
+
 }
 
 .categories-list a{
@@ -454,6 +472,8 @@ a{
 
 .main-footer-bottom{
 	display: flex;
+	padding-top: 33px;
+	padding-bottom: 10px;
 }
 
 .main-footer-adress{
@@ -524,6 +544,10 @@ a{
 	margin-bottom: 50px;
 }
 
+.wrapper-title-breadcrumbs{
+	padding-left: 60px;
+}
+
 .breadcrumbs a{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-weight: 300;
@@ -543,7 +567,7 @@ a{
 
 .filters{
 	background-color: #eeeeee;
-	width: 200px;
+	width: 328px;
 	margin: 0;
 	padding: 0;
 	margin-right: auto;
@@ -610,9 +634,11 @@ a{
 	background-color: #eeeeee;
 	margin: 0;
 	padding: 0;
-	width: 760px;
+	width: 832px;
 	margin-bottom: 69px;
 	display: flex;
+	align-self: flex-start;
+
 }
 
 .sort-list,
@@ -647,12 +673,15 @@ a{
 .catalog{
 	margin: 0;
 	padding: 0;
-	width: 760px;
+	width: 832px;
 }
 
 .catalog-list{
 	list-style: none;
-	margin: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: auto;
 	padding: 0;
 	width: 760px;
 	margin-bottom: 38px;
@@ -759,7 +788,10 @@ a{
 	background-color: #eeeeee;
 	list-style: none;
 	display: flex;
-	margin: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: auto;
 	padding: 0;
 	width: 760px;
 	margin-bottom: 77px;
@@ -821,10 +853,6 @@ a{
 	overflow: hidden;
 }
 
-.main-header{
-	margin: 0;
-	padding: 0;
-}
 
 .container-inner{
 	width: 1040px;
@@ -833,7 +861,9 @@ a{
 
 .nav-top{
 	display: flex;
-	margin-bottom: 45px;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .nav-form{
@@ -872,7 +902,10 @@ a{
 .main-footer-center{
 	display: flex;
 	margin: 0;
-	padding: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 15px;
+	padding-bottom: 20px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -920,4 +953,30 @@ a{
 .appointment-form,
 .modal{
 	display: none;
+}
+
+.sub-menu-wrap{
+	display: flex;
+	position:absolute;
+	background-color: #f7e296;
+	padding-top: 15px;
+	padding-bottom: 35px;
+	top: 24px;
+	left: -60px;
+	width: 1160px;
+    box-sizing: border-box;
+    padding-right: 60px;
+    padding-left: 60px;
+    display: none;
+    
+}
+
+.main-header-wrap{
+	padding-right: 60px;
+	padding-left: 60px;
+	background-color: #f7e296;
+}
+
+.menu{
+	position: relative;
 }
