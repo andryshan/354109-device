@@ -464,11 +464,73 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-basket{
+	padding-left: 24px;
+	position: relative;
+	margin-left: 39px;
+	display: flex;
+}
+
+.footer-basket svg{
+	fill: #ffc600;
+	position: absolute;
+	left: 3px;
+	top: 9px;
+}
+
+.footer-compare{
+	position: relative;
+	padding-left: 25px;
+	margin-left: 38px;
+	display: flex;
+}
+
+.footer-compare svg{
+	fill: #ffc600;
+	position: absolute;
+	left: 5px;
+	top: 11px;
+}
+
+.footer-login{
+	position: relative;
 	padding-left: 40px;
+	display: flex;
+}
+
+.footer-login svg{
+	fill: #ffc600;
+	position: absolute;
+	left: 15px;
+	top: 9px;
+}
+.footer-login path{
+	fill: #ffc600;
+}
+
+.footer-logout{
+	display: flex;
+	margin-left: 19px;
+	padding-left: 0;
 	position: relative;
 }
 
-.footer-basket:before{
+.profile-catalog{
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 12px;
+}
+
+.profile-catalog svg{
+	position: absolute; 
+	top: 9px;
+	left: -14px;
+}
+
+.profile-catalog path{
+	fill: #ffc600;
+}
+/*.footer-basket:before{
 	content: "";
 	position: absolute;
 	width: 12px;
@@ -476,25 +538,34 @@ input[type="radio"].visually-hidden {
 	top: 5px;
 	left: 19px;
 	background: url(../img/cart.svg);
+}*/
+
+
+.main-footer-interaction svg{
+	opacity: 1;
 }
 
-.footer-basket path{
-	fill: #ffc600;
+.main-footer-interaction a:hover svg{
+	opacity: 0.7;
+}
+
+.main-footer-interaction a:active svg{
+	opacity: 0.3;
 }
 
 .main-footer-interaction a{
-	color: white;
-	opacity: 0.7;
+	color: rgba(255, 255, 255, 0.7);
 	letter-spacing: 0.01em;
 }
 
 .main-footer-interaction a:hover{
-	opacity: 1;
+	color: rgba(255, 255, 255, 1);
 }
 
 .main-footer-interaction a:active{
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
+
 
 .main-footer-menu{
 	display: flex;
@@ -532,6 +603,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 33px;
 	padding-bottom: 10px;
 	margin-top: 6px;
+	position: relative;
 }
 
 .main-footer-adress{
@@ -605,6 +677,15 @@ input[type="radio"].visually-hidden {
 }
 .copyright a:active{
 	opacity: 0.3;
+}
+
+.main-footer-bottom::before{
+  content: "";
+  position: absolute;
+  bottom: 31px;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
 }
 
 .page-title{
