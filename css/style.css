@@ -37,6 +37,26 @@ a{
 	text-decoration: none;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+ 	white-space: nowrap;
+ 	clip-path: inset(100%);
+ 	clip: rect(0 0 0 0);
+ 	overflow: hidden;
+}
+
 .container{
 	width: 1160px;
 	padding-left: 20px;
@@ -44,8 +64,6 @@ a{
 	margin-right: auto;
 	margin-left: auto;	
 }
-
-
 
 .user-menu{
 	font-size: 15px;
@@ -60,7 +78,12 @@ a{
 }
 
 .interaction-menu > li:first-child{
-	width: 300px;
+	width: 300px; 
+}
+
+.wrapper-menu-services{
+	width: 500px;
+	display: flex;
 }
 
 /*Как данной разметке обуернуть в микросетку с размером 500px ДОСТАВКА ГАРАНТИЯ КОНТАКТЫ */
@@ -88,8 +111,16 @@ a{
 	padding-top: 15px;
 	padding-bottom: 15px;
 	display: flex;
+	justify-content: space-between;
 }
-
+.wrapper-links{
+	display: flex;
+	flex-direction: column;
+	background-color: red;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: none;
+}
 .sub-menu{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 15px;
@@ -428,6 +459,27 @@ a{
 	padding: 0;
 	display: flex;
 	width: 480px;
+	justify-content: flex-end;
+	margin-top: -2px;
+}
+
+.footer-basket{
+	padding-left: 40px;
+	position: relative;
+}
+
+.footer-basket:before{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 5px;
+	left: 19px;
+	background: url(../img/cart.svg);
+}
+
+.footer-basket path{
+	fill: #ffc600;
 }
 
 .main-footer-interaction a{
@@ -447,9 +499,14 @@ a{
 .main-footer-menu{
 	display: flex;
 	margin: 0;
-	padding: 0;
 	justify-content: space-between;
-	width: 440px;
+	width: 428px;
+	margin-top: 3px;
+	padding-left: 7px;
+	margin-right: auto;
+	flex-wrap: wrap;
+	/*ТУТ сетка была 440 px и паддинг справа должен был быть 10, но почему то он не работал, 
+	поменял размер контейнера на 428 и встало */
 }
 
 .main-footer-menu a{
@@ -474,10 +531,14 @@ a{
 	display: flex;
 	padding-top: 33px;
 	padding-bottom: 10px;
+	margin-top: 6px;
 }
 
 .main-footer-adress{
-	width: 210px;
+	margin: 0;
+	padding: 0;
+	width: 260px;
+	margin-right: 100px;
 }
 
 .main-footer-adress,
@@ -488,15 +549,37 @@ a{
 
 .socials{
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 160px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 160px;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 500px;
+    margin-top: 3px;
+    margin-right: auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  	/*Поставил здесь border-box с падингами слева и справа то не пришлось урезать длину контейнера как в "ДоставкаГарантияКонтакты" */
+}
+.social-btn{
+	width: 32px;
+	height: 32px;
 	display: flex;
-	margin-left: 500px;
-	margin-right: auto;
+	align-items: center;
 }
 
-.socials a{
+.social-btn:hover path{
+	fill-opacity: 0.6;
+}
+
+.social-btn:active path{
+	fill-opacity: 0.1;
+}
+
+/*.socials a{
 	background-color: white;
 	opacity: 0.3;
 	border: 1px solid red;
@@ -510,7 +593,7 @@ a{
 .socials a:hover{
 	background-color: white;
 	opacity: 0.6;
-}
+} */
 
 .copyright{
 	width: 60px;
@@ -731,6 +814,8 @@ a{
 	margin: 0;
 	padding: 0;
 	margin-right: 40px;
+	display: flex;
+	flex-direction: column;
 }
 
 .catalog-item h3{
@@ -739,6 +824,8 @@ a{
 	font-size: 18px;
 	line-height: 24px;
 	color: black;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog-item:nth-child(2n){
@@ -749,8 +836,20 @@ a{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 300;
 	color: #464646;
+	margin: 0;
+	padding: 0;
 }
 
+.wrapper-title-price{
+	display: flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.item-image{
+	order: -1;
+	padding-bottom: 20px;
+}
 .catalog-button{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
@@ -890,7 +989,7 @@ a{
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	
 }
 
 .main-footer-logo{
@@ -906,8 +1005,7 @@ a{
 	padding-right: 0;
 	padding-top: 15px;
 	padding-bottom: 20px;
-	justify-content: space-between;
-	align-items: center;
+	margin-top:5px; 
 }
 
 /* ОБЕРТКА ДЛЯ ФИЛЬТРА И СОРТИРОВКИ С КАТАЛОГОМ ЧТОБЫ ЗАДАТЬ FLEX СЕКЦИЯМ*/
