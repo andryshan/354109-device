@@ -77,6 +77,96 @@ input[type="radio"].visually-hidden {
 	display: flex;
 }
 
+.user-menu li{
+	display: flex;
+}
+
+.user-menu .user-logout{
+	padding-left: 0px;
+}
+
+.user-logout{
+	display: flex;
+	padding-left: 0;
+	margin-right: 62px;
+}
+
+.menu-login{
+	display: flex;
+	margin-right: 216px;
+	position: relative;
+	padding-left: 27px;
+}
+.menu-login::before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	width: 13px;
+	height: 12px;
+	background-image: url("../img/user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.menu-compare{
+	display: flex;
+	margin-right: 44px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.menu-compare::before{
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 1px;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/compare.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.menu-basket{
+	display: flex;
+	margin-right: 0;
+	position: relative;
+	padding-left: 20px;
+}
+
+.menu-basket::before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: -2px;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user-profile{
+	display: flex;
+	position: relative;
+	margin-right: 20px;
+	padding-left: 27px;
+}
+
+.user-profile::before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	width: 13px;
+	height: 12px;
+	background-image: url("../img/user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
 .interaction-menu > li:first-child{
 	width: 300px; 
 }
@@ -86,7 +176,20 @@ input[type="radio"].visually-hidden {
 	display: flex;
 }
 
-/*Как данной разметке обуернуть в микросетку с размером 500px ДОСТАВКА ГАРАНТИЯ КОНТАКТЫ */
+.services-delivery{
+	display: flex;
+	margin-right: 35px;
+}
+
+.services-warranty{
+	display: flex;
+	margin-right: 107px;
+}
+
+.services-contacts{
+	display: flex;
+	margin-right: 0;
+}
 
 .interaction-menu,
 .interaction-menu ul{
@@ -112,6 +215,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
+
 }
 .wrapper-links{
 	display: flex;
@@ -122,6 +226,8 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 .sub-menu{
+	display: flex;
+	flex-direction: column;
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 15px;
 	line-height: 36px;
@@ -132,24 +238,88 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 }
+.main-header-logo{
+	padding-top: 11px;
+}
 
-.main-nav a:hover,
+.main-nav{
+	padding-top: 11px;
+}
+
 .main-header-logo:hover{
 	opacity: 0.6;
 }
 
-.main-nav a:active,
 .main-header-logo:active{
 	opacity: 0.3;
 }
+
+.main-nav a:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav a:active{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.interactive{
+	margin-right: 59px;
+}
+
+.onhands{
+	margin-right: 75px;
+}
+
+.quadro{
+	margin-right: 0;
+}
+
 
 /* с блоком инпута правильно не знаю как поступать (забыл что пока мы делаем только базовую стиизацию)*/
 .form-input{
 	background-color: #f7e296;
 	border: none;
-	opacity: 0.3;
+	color: black;
+	padding-left: 39px;
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: 3px 8px;
+	outline: none;
+	width: 315px;
+	padding-top: 7px;
+	padding-bottom: 14px;
 }
 
+.form-input:focus{
+	border-bottom: 2px solid black;
+}
+
+.form-input:focus ~ .form-search{
+	visibility: visible;
+}
+
+.nav-top .form-search{
+	padding: 3px 18px;
+	background-color: #f7e296;
+	color: black;
+	border: 2px solid black;
+	display: inline-flex;
+	visibility: hidden;
+}
+
+.form-search:hover{
+	background-color: black;
+	color: rgba(255,255,255, 1);
+	visibility: visible;
+}
+
+.form-search:active{
+	visibility: visible;
+	background-color: black;
+	color: rgba(255,255,255, 0.3); 
+}
+
+/*;
 .form-search{
 	visibility: hidden;
 }
@@ -190,7 +360,7 @@ input[type="radio"].visually-hidden {
 	padding: 11px 20px;
 }
 
-
+*/
 .paragraph{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
@@ -275,7 +445,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 80px;
-
 }
 
 .categories-list a{
@@ -419,13 +588,15 @@ input[type="radio"].visually-hidden {
 .about-company-list{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
-	font-size: 15px;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0;
 	margin: 0;
 	padding: 0;
 	width: 480px;
 	padding-top: 41px;
-	padding-bottom: 72px;
-	margin-top: -16px;
+	padding-bottom: 59px;
+	margin-top: -31px;
 }
 
 /*.wrapper-about::before{
@@ -1056,22 +1227,29 @@ input[type="radio"].visually-hidden {
 .nav-top{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 6px;
+	padding-bottom: 16px;
 }
 
 .nav-form{
 	width: 440px;
+	display: flex;
 }
 
 .menu{
 	margin: 0;
 	padding: 0;
+	padding-right: 35px;
+	position: relative;
 }
 
-.menu ul{
-	width: 600px;
+.menu svg{
+	position: absolute;
+	top: 4px;
+	left: 230px;
+	fill-opacity: 0.3;
 }
+
 
 .wrapper-about{
 	display: flex;
@@ -1153,15 +1331,15 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	position:absolute;
 	background-color: #f7e296;
-	padding-top: 15px;
-	padding-bottom: 35px;
+	padding-top: 21px;
+	padding-bottom: 34px;
 	top: 24px;
 	left: -60px;
 	width: 1160px;
     box-sizing: border-box;
     padding-right: 60px;
     padding-left: 60px;
-    display: none;
+   	
     
 }
 
@@ -1169,6 +1347,9 @@ input[type="radio"].visually-hidden {
 	padding-right: 60px;
 	padding-left: 60px;
 	background-color: #f7e296;
+	box-shadow: inset 0 40px 0 0 white;
+	padding-top: 21px;
+	padding-bottom: 15px;
 }
 
 .menu{
