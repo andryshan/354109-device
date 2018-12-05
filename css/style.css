@@ -199,6 +199,7 @@ input[type="radio"].visually-hidden {
 	color: black;
 	letter-spacing: 0.01em;
 	margin: 0;
+	padding-bottom: 30px;
 }
 
 .products-item{
@@ -364,7 +365,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 94px;
+	padding-bottom: 80px;
 }
 
 .dji-logo:hover{
@@ -389,6 +390,7 @@ input[type="radio"].visually-hidden {
 	width: 480px;
 }
 
+
 .about p{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 15px;
@@ -396,6 +398,17 @@ input[type="radio"].visually-hidden {
 	font-weight: 300;
 	color: #464646;
 	letter-spacing: 0;
+}
+.about-choice{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: -16px;
+}
+
+.about-delivery{
+	padding-top: 25px;
+	padding-bottom: 40px;
+	margin-top: -39px;
 }
 
 .about-list,
@@ -410,10 +423,38 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	width: 480px;
+	padding-top: 41px;
+	padding-bottom: 72px;
+	margin-top: -16px;
+}
+
+/*.wrapper-about::before{
+	content: "";
+	position: absolute;
+	bottom: -982px;
+	width: 80px;
+	height: 7px;
+	background-color: black;
+} На что повесить всевдоэлмент? */
+.about-company-list li{
+	padding-left: 35px;
 }
 
 .contacts{
 	width: 560px;
+}
+
+.contacts p{
+	margin: 0;
+	padding-top: 30px;
+	margin-top: -17px;
+	padding-bottom: 40px;
+}
+
+.contacts-map{
+	padding-top: 0;
+	padding-bottom:0;
+	margin-bottom: 64px;
 }
 
 .about-button,
@@ -530,16 +571,6 @@ input[type="radio"].visually-hidden {
 .profile-catalog path{
 	fill: #ffc600;
 }
-/*.footer-basket:before{
-	content: "";
-	position: absolute;
-	width: 12px;
-	height: 12px;
-	top: 5px;
-	left: 19px;
-	background: url(../img/cart.svg);
-}*/
-
 
 .main-footer-interaction svg{
 	opacity: 1;
@@ -565,7 +596,6 @@ input[type="radio"].visually-hidden {
 .main-footer-interaction a:active{
 	color: rgba(255, 255, 255, 0.3);
 }
-
 
 .main-footer-menu{
 	display: flex;
@@ -650,22 +680,6 @@ input[type="radio"].visually-hidden {
 .social-btn:active path{
 	fill-opacity: 0.1;
 }
-
-/*.socials a{
-	background-color: white;
-	opacity: 0.3;
-	border: 1px solid red;
-}
-
-.socials a:active{ 
-	background-color: white;
-	opacity: 0.1;
-}
-
-.socials a:hover{
-	background-color: white;
-	opacity: 0.6;
-} */
 
 .copyright{
 	width: 60px;
@@ -1062,8 +1076,11 @@ input[type="radio"].visually-hidden {
 .wrapper-about{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 80px;
+	padding-top: 70px;
+	margin-top: -14px;
+	padding-bottom: 87px;
 }
+
 
 .main-footer-top{
 	margin: 0;
@@ -1089,12 +1106,10 @@ input[type="radio"].visually-hidden {
 	margin-top:5px; 
 }
 
-/* ОБЕРТКА ДЛЯ ФИЛЬТРА И СОРТИРОВКИ С КАТАЛОГОМ ЧТОБЫ ЗАДАТЬ FLEX СЕКЦИЯМ*/
 .wrapper{
 	display: flex;
 }
 
-/* Контеинер для внутренней страницы */
 .container-catalog{
 	margin: 0 auto;
 	padding-left: 60px;
