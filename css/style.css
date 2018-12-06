@@ -75,6 +75,8 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	width: 500px;
 	display: flex;
+	padding-bottom: 9px;
+	padding-top: 9px;
 }
 
 .user-menu li{
@@ -211,7 +213,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding-left: 0;
 	padding-right: 0;
-	padding-top: 15px;
+	padding-top: 13px;
 	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
@@ -243,7 +245,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav{
-	padding-top: 11px;
+	padding-top: 2px;
 }
 
 .main-header-logo:hover{
@@ -283,15 +285,21 @@ input[type="radio"].visually-hidden {
 	padding-left: 39px;
 	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
-	background-position: 3px 8px;
+	background-position: 3px 17px;
 	outline: none;
 	width: 315px;
-	padding-top: 7px;
+	padding-top: 13px;
 	padding-bottom: 14px;
+}
+
+.form-input::-webkit-input-placeholder {
+	color: black;
+	opacity: 0.3;
 }
 
 .form-input:focus{
 	border-bottom: 2px solid black;
+	padding-bottom: 12px;
 }
 
 .form-input:focus ~ .form-search{
@@ -299,7 +307,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-top .form-search{
-	padding: 3px 18px;
+	padding: 14px 18px;
 	background-color: #f7e296;
 	color: black;
 	border: 2px solid black;
@@ -319,48 +327,6 @@ input[type="radio"].visually-hidden {
 	color: rgba(255,255,255, 0.3); 
 }
 
-/*;
-.form-search{
-	visibility: hidden;
-}
-
-.form-search:hover{
-	visibility: visible;
-
-	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	text-align: center;
-	width: 85px;
-	height: 49px;
-	border: 2px solid black;
-	color: white;
-	background-color: black;
-	padding: 11px 20px; 
-}
-
-.form-search:active{
-	visibility: visible;
-
-	color: rgba(255,255,255, 0.3); 
-}
-
-.form-input:focus ~ .form-search{
-	visibility: visible;
-
-	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	text-align: center;
-	width: 85px;
-	height: 49px;
-	border: 2px solid black;
-	color: black;
-	background-color: #f7e296;
-	padding: 11px 20px;
-}
-
-*/
 .paragraph{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
@@ -1239,13 +1205,17 @@ input[type="radio"].visually-hidden {
 .menu{
 	margin: 0;
 	padding: 0;
+	position: relative;
+}
+
+.menu-catalog {
 	padding-right: 35px;
 	position: relative;
 }
 
-.menu svg{
+.menu-catalog svg{
 	position: absolute;
-	top: 4px;
+	top: 3px;
 	left: 230px;
 	fill-opacity: 0.3;
 }
@@ -1339,7 +1309,7 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     padding-right: 60px;
     padding-left: 60px;
-   	
+   
     
 }
 
@@ -1352,6 +1322,3 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 }
 
-.menu{
-	position: relative;
-}
