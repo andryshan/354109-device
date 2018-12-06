@@ -766,11 +766,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-bottom{
+	margin: 0;
 	display: flex;
-	padding-top: 33px;
-	padding-bottom: 10px;
-	margin-top: 6px;
-	position: relative;
+    padding-top: 39px;
+    padding-bottom: 10px;
+    position: relative;
 }
 
 .main-footer-adress{
@@ -819,7 +819,7 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright{
-	width: 60px;
+	display: flex;
 	text-align: right;
 }
 
@@ -1208,7 +1208,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.menu-catalog {
+.menu-catalog{
 	padding-right: 35px;
 	position: relative;
 }
@@ -1245,13 +1245,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-center{
-	display: flex;
-	margin: 0;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 15px;
-	padding-bottom: 20px;
-	margin-top:5px; 
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .wrapper{
@@ -1269,12 +1268,35 @@ input[type="radio"].visually-hidden {
 }
 
 .container .products{
-	padding: 0 60px;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 60px;
+	padding-left: 0;
+	box-shadow: inset 0 133px 0 0 #f7e296;;
 	margin-bottom: 106px;
 }
 
+.selfi-stick{
+	position: absolute;
+	top: 22px;
+    left: 90px;
+}
+
+.bracelet{
+	position: absolute;
+	top: 22px;
+    left: 90px;
+}
+
+.quadcopter{
+	position: absolute;
+	top: 87px;
+    left: 31px;
+}
+
 .wrapper-image{
-	width: 440px;
+	width: 560px;
+	position: relative;
 }
 
 .wrapper-info{
@@ -1298,7 +1320,6 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-menu-wrap{
-	display: flex;
 	position:absolute;
 	background-color: #f7e296;
 	padding-top: 21px;
@@ -1309,8 +1330,12 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     padding-right: 60px;
     padding-left: 60px;
-   
-    
+    display: none;
+   	z-index: 1;
+}
+
+.menu:hover .sub-menu-wrap{
+	display: flex;
 }
 
 .main-header-wrap{
@@ -1322,3 +1347,6 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 }
 
+.wrap-catalog{
+	padding-bottom: 35px;
+}
