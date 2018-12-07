@@ -168,14 +168,13 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
-
 .interaction-menu > li:first-child{
 	width: 300px; 
 }
 
-.wrapper-menu-services{
-	width: 500px;
+.wrapper-menu-services ul{
 	display: flex;
+	width: 500px;
 }
 
 .services-delivery{
@@ -364,7 +363,8 @@ input[type="radio"].visually-hidden {
 }
 
 .products-item a{
-	background-color: #f0c52e;
+	padding-top: 26px;
+	padding-bottom: 25px;
 	color: black;
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
@@ -373,10 +373,34 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.2em;
 	text-transform: uppercase; 
 	text-align: center;
+	padding-right: 41px;
+	padding-left: 41px;
+	width: 140px;
+	display: inline-block;
+	position: relative;
+
 }
 
 .products-item a:active{
 	color: #a88a20;
+}
+
+.products-item a:before{
+	content: '';
+	position: absolute;
+	width: 220px;
+	height: 8px;
+	background-color: #f0c52e;
+	top: 34px;
+	left: 1px;
+    z-index: -1;
+}
+
+.products-item a:hover::before{
+	top: 17px;
+	height: 40px;
+	background-color: #f0c52e;
+	transition: 0.3s ease;
 }
 
 .stats{
@@ -402,6 +426,26 @@ input[type="radio"].visually-hidden {
 	padding-top: 200px;
 	width: 160px;
 
+}
+
+.products-item table{
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+}
+
+.stats td,
+.properties td{
+	padding-right: 20px;
+	padding-bottom: 6px;
+}
+
+.products-item td:last-child{
+	padding-right: 0;
+}
+
+.quadcopter td:last-child{
+	padding-right: 171px;
 }
 
 .categories-list{
@@ -494,13 +538,16 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0; 
 }
 
+.partners{
+	padding-bottom: 78px;
+}
+
 .partners-list{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 80px;
 }
 
 .dji-logo:hover{
@@ -520,8 +567,6 @@ input[type="radio"].visually-hidden {
 }
 
 .about{
-	margin: 0;
-	padding: 0;
 	width: 480px;
 }
 
@@ -533,17 +578,17 @@ input[type="radio"].visually-hidden {
 	font-weight: 300;
 	color: #464646;
 	letter-spacing: 0;
+	margin: 0;
 }
+
 .about-choice{
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-top: -16px;
+	padding-top: 14px;
+    padding-bottom: 9px;
 }
 
 .about-delivery{
-	padding-top: 25px;
-	padding-bottom: 40px;
-	margin-top: -39px;
+	padding-top: 21px;
+    padding-bottom: 40px;
 }
 
 .about-list,
@@ -560,21 +605,24 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	width: 480px;
-	padding-top: 41px;
-	padding-bottom: 59px;
-	margin-top: -31px;
+	padding-top: 26px;
+	padding-bottom: 45px;
 }
 
-/*.wrapper-about::before{
-	content: "";
-	position: absolute;
-	bottom: -982px;
-	width: 80px;
-	height: 7px;
-	background-color: black;
-} На что повесить всевдоэлмент? */
 .about-company-list li{
 	padding-left: 35px;
+	position: relative;
+}
+
+.about-company-list li::before{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	border: 2px solid #e5e5e5;
+	top: 17px;
+    left: 1px;
 }
 
 .contacts{
@@ -583,28 +631,79 @@ input[type="radio"].visually-hidden {
 
 .contacts p{
 	margin: 0;
-	padding-top: 30px;
-	margin-top: -17px;
-	padding-bottom: 40px;
+	padding-top: 14px;
+    padding-bottom: 40px;
 }
 
 .contacts-map{
 	padding-top: 0;
-	padding-bottom:0;
-	margin-bottom: 64px;
+	padding-bottom:45px;
 }
 
 .about-button,
 .contacts-button{
+	display: inline-block;
+	position: relative;
 	font-size: 18px;
 	line-height: 24px;
-	background-color: #f0c52e;
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-weight: 800;
 	color: black;
 	text-align: center;
 	text-transform: uppercase; 
 	letter-spacing: 0.2em;
+	z-index: 1;
+}
+
+.about-button{
+	padding-top: 17px;
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-bottom: 15px;
+}
+
+.contacts-button{
+	padding-left: 41px;
+	padding-right: 41px;
+	padding-top: 22px;
+	padding-bottom: 15px
+}
+
+.about-button::before{
+	content: '';
+	position: absolute;
+	width: 260px;
+	height: 8px;
+	background-color: #f0c52e;
+	top: 25px;
+    left: 0;
+    z-index: -1;
+}
+
+.contacts-button::before{
+	content: '';
+	position: absolute;
+	width: 260px;
+	height: 8px;
+	background-color: #f0c52e;
+	top: 30px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.about-button:hover::before{
+	top: 10px;
+	height: 40px;
+	background-color: #f0c52e;
+	transition: 0.3s ease;
+}
+
+.contacts-button:hover::before{
+	top: 14px;
+	height: 40px;
+	background-color: #f0c52e;
+	transition: 0.3s ease;
 }
 
 .about-button:active,
@@ -614,10 +713,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer{
 	background-color: #464646;
-	display: flex;
-	margin: 0;
-	padding-top: 65px;
-	padding-bottom: 65px;
+	padding-top: 48px;
+	padding-bottom: 48px;
 }
 
 .logo:hover{
@@ -633,12 +730,15 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-interaction{
-	margin: 0;
 	padding: 0;
 	display: flex;
 	width: 480px;
 	justify-content: flex-end;
-	margin-top: -2px;
+
+}
+
+.main-footer-interaction li{
+	padding-bottom: 10px;
 }
 
 .footer-basket{
@@ -739,12 +839,9 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	justify-content: space-between;
 	width: 428px;
-	margin-top: 3px;
 	padding-left: 7px;
 	margin-right: auto;
 	flex-wrap: wrap;
-	/*ТУТ сетка была 440 px и паддинг справа должен был быть 10, но почему то он не работал, 
-	поменял размер контейнера на 428 и встало */
 }
 
 .main-footer-menu a{
@@ -774,8 +871,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-adress{
-	margin: 0;
-	padding: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	width: 260px;
 	margin-right: 100px;
 }
@@ -796,7 +894,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     margin-bottom: 0;
     margin-left: 500px;
-    margin-top: 3px;
+
     margin-right: auto;
     justify-content: space-between;
     box-sizing: border-box;
@@ -821,6 +919,7 @@ input[type="radio"].visually-hidden {
 .copyright{
 	display: flex;
 	text-align: right;
+	padding-top: 13px;
 }
 
 .copyright a:hover{
@@ -1225,32 +1324,29 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 70px;
-	margin-top: -14px;
-	padding-bottom: 87px;
+	padding-bottom: 75px;
 }
 
+.wrapper-about p{
+	margin: 0;
+}
 
 .main-footer-top{
-	margin: 0;
-	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 .main-footer-logo{
-	margin: 0;
-	padding: 0;
 	width: 180px;
+	padding-top: 17px;
 }
 
 .main-footer-center{
     display: flex;
-    margin: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 9px;
 }
 
 .wrapper{
@@ -1276,22 +1372,34 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 106px;
 }
 
-.selfi-stick{
+.selfi-stick-image{
 	position: absolute;
 	top: 22px;
     left: 90px;
 }
 
-.bracelet{
+.bracelet-image{
 	position: absolute;
-	top: 22px;
-    left: 90px;
+	top: 34px;
+    left: 116px;
 }
 
-.quadcopter{
+.quadcopter-image{
 	position: absolute;
 	top: 87px;
     left: 31px;
+}
+
+.selfi-stick p{
+	width: 495px;
+}
+
+.bracelet p{
+	width: 461px;
+}
+
+.quadcopter p{
+	width: 480px;
 }
 
 .wrapper-image{
@@ -1300,18 +1408,30 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-info{
-	width: 500px;
+	width: 501px;
 	display: flex;
 	flex-direction: column;
+	padding-top: 55px;
+}
+
+.wrapper-info p,
+.wrapper-info b{
+	margin: 0;
+}
+
+.wrapper-info b{
+	padding-top: 46px;
+	padding-bottom: 15px;
+}
+
+.wrapper-info p{
+	padding-top: 4px;
+	padding-bottom: 25px;
 }
 
 .service .container{
 	display: flex;
 	margin-bottom: 94px;
-}
-
-.slider-hidden{
-	display: none;
 }
 
 .appointment-form,
@@ -1350,3 +1470,74 @@ input[type="radio"].visually-hidden {
 .wrap-catalog{
 	padding-bottom: 35px;
 }
+
+.products{
+	position: relative;
+}
+
+.products-item{
+	display: none;
+}
+
+.slider-controls label {
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-controls label::after {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	background: #ffffff;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 149px;
+	z-index: 100;
+	right: 38px;
+	width: 160px;
+	height: 18px;
+	text-align: center;
+	font-size: 0;
+}
+
+.product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+.product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+.product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+	content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    margin: -6px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.product-1:checked ~ .selfi-stick {
+  display: flex;
+}
+
+.product-2:checked ~ .bracelet {
+  display: flex;
+}
+
+.product-3:checked ~ .quadcopter {
+  display: flex;
+}
+
