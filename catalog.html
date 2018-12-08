@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-	<header class="main-header container">
+	<header class="main-header container catalog-inner">
 		<div class="main-header-wrap wrap-catalog">
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" alt="Логотип сайта Девайс" width="164" height="36">
@@ -60,13 +60,12 @@
 			<div class="wrapper-title-breadcrumbs">
 				<h1 class="page-title">Моноподы для селфи</h1>
 				<ul class="breadcrumbs">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="#">Каталог товаров</a></li>
+					<li><a href="index.html" class="pagination-main">Главная</a></li>
+					<li><a href="#" class="pagination-catalog">Каталог товаров</a></li>
 					<li class="breadcrumbs-current"><a href="catalog.html">Моноподы для селфи</a></li>
 				</ul>
 			</div>
 		</div>
-	    	
 	    <div class="container">
 	    	<div class="wrapper">
 			<section class="filters">
@@ -74,13 +73,21 @@
 				<strong>Фильтр:</strong>
 				<form method="get" class="filter" action="https://echo.htmlacademy.ru">
 					<fieldset>
-						<legend>Стоимость</legend>
-							<div class="diaposon">
-							
+						<legend class="cost">Стоимость</legend>
+							<div class="range-controls">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+								</div>
 							</div>
 					</fieldset>
 					<fieldset>
-						<legend>Цвет</legend>
+						<legend class="color">Цвет</legend>
 						<ul>
 							<li class="filter-option">
 								<label>

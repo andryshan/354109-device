@@ -73,7 +73,7 @@
 					<div class="wrapper-info">
 						<b>Делай селфи,<br>как Бен Стиллер!</b>
 						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a href="#">Подробнее</a>
+						<a href="#" class="button button-more">Подробнее</a>
 						<table>
 							<tr class="stats">
 								<td>8,5 м</td>
@@ -96,7 +96,7 @@
 					<div class="wrapper-info">
 						<b>Худеем<br> правильно!</b>
 						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a href="#">Подробнее</a>
+						<a href="#" class="button button-more">Подробнее</a>
 						<table>
 							<tr class="stats">
 								<td>48 часов</td>
@@ -115,7 +115,7 @@
 						<div class="wrapper-info">
 						<b>Порхает как бабочка, жалит как пчела!</b>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-						<a href="#">Подробнее</a>
+						<a href="#" class="button button-more">Подробнее</a>
 						<table>
 							<tr class="stats">
 								<td>800 м</td>
@@ -196,7 +196,7 @@
 						<li class="company-item">Автотрейдинг</li>
 						<li class="company-item">ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="#" class="about-button">Подробнее о нас</a>
+					<a href="#" class="about-button button">Подробнее о нас</a>
 				</section>
 
 				<section class="contacts">
@@ -205,7 +205,7 @@
 					<a href="#">
 						<img class="contacts-map" src="img/map.jpg" alt="Карта проезда" width="560" height="222">
 					</a>
-					<a href="#" class="contacts-button">Напишите нам</a>
+					<a href="#" class="contacts-button button">Напишите нам</a>
 				</section>
 			</div>
 		</div>
@@ -276,28 +276,34 @@
 		</div>
 	</footer>
 
-	<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+	<form class="appointment-form container" action="https://echo.htmlacademy.ru" method="post">
 		<h2 class="visually-hidden">Заполните форму</h2>
-		<p class="appointment-item">
-			<label>Ваше Имя:
-				<input type="text" name="name" placeholder="Имя Фамилия">
-			</label>
-		</p>
-		<p class="appointment-item">
-			<label>Ваш e-mail:
-				<input type="text" name="email" placeholder="email@example.com">
-			</label>
-		</p>
-		<p class="appointment-item">
-			<label>Текст письма:
-				<textarea name="letter" placeholder="В свободной форме"></textarea>
-			</label>
-		</p>
-		<button class="button" type="submit">Отправить</button>
-		<button class="modal-close" type="button" aria-label="Закрыть карту">Закрыть</button>
+		<div class="wrapper-form">
+			<div class="wrapper-form-info">
+				<div class="name-email-wrapper">
+					<p class="appointment-item">
+						<label class="label-name">Ваше имя:
+							<input type="text" name="name" placeholder="Имя Фамилия">
+						</label>
+					</p>
+					<p class="appointment-item">
+						<label class="label-email">Ваш e-mail:
+							<input type="text" name="email" placeholder="email@example.com">
+						</label>
+					</p>
+				</div>
+				<p class="appointment-item">
+					<label>Текст письма:
+						<textarea name="letter" placeholder="В свободной форме"></textarea>
+					</label>
+				</p>
+				<button class="button form-button" type="submit">Отправить</button>
+				<button class="modal-close" type="button" aria-label="Закрыть карту">Закрыть</button>
+			</div>
+		</div>
 	</form>
 
-	<section class="modal modal-map">
+	<section class="modal modal-map container">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
 		<p>
 			<img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва">

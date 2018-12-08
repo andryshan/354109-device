@@ -362,30 +362,15 @@ input[type="radio"].visually-hidden {
 	color: #464646;
 }
 
-.products-item a{
+.button-more{
 	padding-top: 26px;
 	padding-bottom: 25px;
-	color: black;
-	font-family: 'Gilroy', 'Arial', sans-serif;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-	text-transform: uppercase; 
-	text-align: center;
 	padding-right: 41px;
 	padding-left: 41px;
 	width: 140px;
-	display: inline-block;
-	position: relative;
-
 }
 
-.products-item a:active{
-	color: #a88a20;
-}
-
-.products-item a:before{
+.button-more:before{
 	content: '';
 	position: absolute;
 	width: 220px;
@@ -394,13 +379,13 @@ input[type="radio"].visually-hidden {
 	top: 34px;
 	left: 1px;
     z-index: -1;
+    transition: all 0.3s ease;
 }
 
-.products-item a:hover::before{
+.button-more:hover::before{
 	top: 17px;
 	height: 40px;
 	background-color: #f0c52e;
-	transition: 0.3s ease;
 }
 
 .stats{
@@ -640,8 +625,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom:45px;
 }
 
-.about-button,
-.contacts-button{
+.button{
 	display: inline-block;
 	position: relative;
 	font-size: 18px;
@@ -654,6 +638,7 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.2em;
 	z-index: 1;
 }
+
 
 .about-button{
 	padding-top: 17px;
@@ -669,7 +654,8 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px
 }
 
-.about-button::before{
+.about-button::before,
+.contacts-button::before{
 	content: '';
 	position: absolute;
 	width: 260px;
@@ -678,36 +664,26 @@ input[type="radio"].visually-hidden {
 	top: 25px;
     left: 0;
     z-index: -1;
+    transition: all 0.3s ease;
 }
 
 .contacts-button::before{
-	content: '';
-	position: absolute;
-	width: 260px;
-	height: 8px;
-	background-color: #f0c52e;
 	top: 30px;
-    left: 0;
-    z-index: -1;
 }
-
 
 .about-button:hover::before{
 	top: 10px;
 	height: 40px;
 	background-color: #f0c52e;
-	transition: 0.3s ease;
 }
 
 .contacts-button:hover::before{
 	top: 14px;
 	height: 40px;
 	background-color: #f0c52e;
-	transition: 0.3s ease;
 }
 
-.about-button:active,
-.contacts-button:active{
+.button:active{
 	color: #a88a20;
 }
 
@@ -946,8 +922,10 @@ input[type="radio"].visually-hidden {
 	color: black;
 	letter-spacing: 0.01em;
 	margin: 0;
-	padding: 0;
-	margin-bottom: 27px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 17px;
+	padding-bottom: 15px;
 }
 
 .breadcrumbs{
@@ -955,11 +933,43 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	margin-bottom: 50px;
+	padding-top: 6px;
+	padding-bottom: 43px;
 }
 
 .wrapper-title-breadcrumbs{
 	padding-left: 60px;
+}
+
+.pagination-main,
+.pagination-catalog{
+	padding-right: 24px;
+	margin-right: 13px;
+	position: relative;
+}
+
+.pagination-main:after{
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 68px;
+	width: 4px;
+	height: 7px;
+	background-image: url("../img/nav-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.pagination-catalog:after{
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 128px;
+	width: 4px;
+	height: 7px;
+	background-image: url("../img/nav-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .breadcrumbs a{
@@ -980,11 +990,25 @@ input[type="radio"].visually-hidden {
 }
 
 .filters{
+	display: flex;
+	flex-direction: column;
 	background-color: #eeeeee;
 	width: 328px;
 	margin: 0;
-	padding: 0;
 	margin-right: auto;
+	padding-left: 60px;
+	padding-right: 68px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.filter{
+	border-top: 2px solid black;
+}
+
+.cost{
+	padding-top: 10px;
+	padding-bottom: 25px;
 }
 
 .filters strong,
@@ -996,10 +1020,18 @@ input[type="radio"].visually-hidden {
 	color: black;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	margin: 0;
+}
+
+.filters strong{
+	padding-top: 23px;
+	padding-bottom: 92px;
 }
 
 .filters fieldset{
 	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 .filters legend{
@@ -1008,6 +1040,7 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 24px;
 	color: black;
+	margin: 0;
 }
 .filters ul{
 	list-style: none;
@@ -1351,6 +1384,7 @@ input[type="radio"].visually-hidden {
 
 .wrapper{
 	display: flex;
+
 }
 
 .container-catalog{
@@ -1432,11 +1466,6 @@ input[type="radio"].visually-hidden {
 .service .container{
 	display: flex;
 	margin-bottom: 94px;
-}
-
-.appointment-form,
-.modal{
-	display: none;
 }
 
 .sub-menu-wrap{
@@ -1541,3 +1570,139 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+
+.appointment-form {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.wrapper-form{
+	padding-left: 100px;
+	padding-right: 100px;
+	position: relative;
+}
+
+.wrapper-form-info{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 47px;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.appointment-item{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	margin: 0;
+	letter-spacing: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.appointment-item input,
+.appointment-item textarea{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+	letter-spacing: 0;
+	background-color: #f2f2f2;
+	border: none;
+	padding: 16px 20px;
+}
+
+.appointment-item input{
+	width: 360px;
+	box-sizing: border-box;
+}
+
+.appointment-item textarea{
+	min-height: 156px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.wrapper-form-info{
+	background-color: white;
+}
+
+.name-email-wrapper{
+	padding-top: 46px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.name-email-wrapper p{
+	width: 360px;
+}
+
+
+.modal-map{
+	position: relative;
+	z-index: 10;
+}
+
+.modal-map p{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+
+}
+
+.modal-map img{
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-close{
+	width: 55px;
+	height: 55px;
+	font-size: 0;
+	background-color: rgba(240,197, 46, 0.5);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+}
+
+.appointment-form .modal-close{
+	right: 122px;
+    top: 22px
+}
+
+.modal-map .modal-close{
+	right: 142px;
+    top: 22px
+}
+
+.modal-close::before,
+.modal-close::after{
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 2px;
+	background-color: white;
+	top: 26px;
+	left: 12px;
+}
+
+.modal-close::before{
+	transform: rotate(-45deg);
+}
+.modal-close::after{
+	transform: rotate(45deg);
+}
+
+.modal-close:hover{
+	background-color: rgba(240,197, 46, 1);
+}
+
+.modal-close:active{
+	background-color: rgba(240,197, 46, 0.3);
+}
+
+.catalog-inner{
+	padding-bottom: 20px;
+}
