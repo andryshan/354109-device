@@ -74,20 +74,22 @@
 				<form method="get" class="filter" action="https://echo.htmlacademy.ru">
 					<fieldset>
 						<legend class="cost">Стоимость</legend>
-							<div class="range-controls">
+							<div class="range-filter">
 								<div class="range-controls">
 									<div class="scale">
 										<div class="bar"></div>
 									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
 								</div>
 								<div class="price-controls">
-									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-									<label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+									<label class="min-price">от 0</label>
+									<label class="max-price">до 5000</label>
 								</div>
 							</div>
 					</fieldset>
 					<fieldset>
-						<legend class="color">Цвет</legend>
+						<legend class="color"><span>Цвет</span></legend>
 						<ul>
 							<li class="filter-option">
 								<label>
@@ -122,7 +124,7 @@
 						</ul>
 					</fieldset>
 					<fieldset>
-						<legend>Bluetooth</legend>
+						<legend class="bluetooth"><span>Bluetooth</span></legend>
 						<ul>
 							<li class="filter-option">
 								<label>
@@ -138,14 +140,14 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button type="submit" class="filters-button">Показать</button>
+					<button type="submit" class="filters-button button">Показать</button>
 				</form>
 			</section>
-
-			<section class="catalog">
-				<h2 class="visually-hidden">Сортировка и список моноподов</h2>
-				<div class="sort">
-					<strong>Сортировка:</strong>
+			
+			<div class="wrapper-sort-catalog">
+			<section class="sort">
+				<h2 class="visually-hidden">Сортировка</h2>
+				<strong>Сортировка:</strong>
 					<ul class="sort-list">
 						<li class="sort-item"><a href="#" class="sort-current">По цене</a></li>
 						<li class="sort-item"><a href="#">По типу</a></li>
@@ -156,7 +158,9 @@
 						<li class="sort-up"><a href="#"></a></li>
 						<li class="sort-down"><a class="sort-current" href="#"></a></li>
 					</ul>
-				</div>
+			</section>	
+			<section class="catalog">
+				<h2 class="visually-hidden">Каталог моноподов</h2>
 				<ul class="catalog-list">
 					<li class="catalog-item">
 						<div class="wrapper-title-price">
@@ -235,6 +239,7 @@
 					<li class="pagination-item forward"><a href="#">Вперед</a></li>
 				</ul>	
 			</section>
+			</div>
 			</div>
 		</div>
 	</main>
