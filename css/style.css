@@ -1319,6 +1319,9 @@ input[type="radio"].visually-hidden {
 	padding-top: 25px;
 	margin-right: auto;
 }
+.sort-list a{
+	color: #b7b7b7;
+}
 
 .sort-list li{
 	margin-right: 28px;
@@ -1367,7 +1370,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 }
 
-.sort-current{
+.sort-item .sort-current{
 	color: black;
 }
 
@@ -1636,7 +1639,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 0;
 	padding-right: 60px;
 	padding-left: 0;
-	box-shadow: inset 0 133px 0 0 #f7e296;;
+	box-shadow: inset 0 133px 0 0 #f7e296;
 	margin-bottom: 106px;
 }
 
@@ -1949,3 +1952,33 @@ input[type="radio"].visually-hidden {
 .catalog-inner{
 	padding-bottom: 20px;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.container .products{
+		box-shadow: inset 0 133px 0 0 #f7e296,
+			inset 0 133px 0 0 #f7e296,
+			inset 0 133px 0 0 #f7e296,
+			inset 0 133px 0 0 #f7e296,
+			inset 0 133px 0 0 #f7e296,
+			inset 0 133px 0 0 #f7e296;
+		
+   }
+	.main-header.container{
+		width: 1161px;
+		
+	}
+	
+	.quadcopter .wrapper-info{
+		width: 508px;
+		/* "Порхает как бабочка не влезает в ИЕ" */
+	}
+
+	.stats td, .properties td{
+		padding-right: 70px;
+		padding-bottom: 6px;
+	}
+
+}
+
+
+
