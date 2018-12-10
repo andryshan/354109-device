@@ -393,7 +393,7 @@ input[type="radio"].visually-hidden {
 	top: 34px;
 	left: 1px;
     z-index: -1;
-    transition: all 0.3s ease;
+    transition: top .3s, height .3s;
 }
 
 .button-more:hover::before{
@@ -679,7 +679,7 @@ input[type="radio"].visually-hidden {
 	top: 25px;
     left: 0;
     z-index: -1;
-    transition: all 0.3s ease;
+    transition: top .3s, height .3s;
 }
 
 .contacts-button::before{
@@ -718,7 +718,7 @@ input[type="radio"].visually-hidden {
 	left: 0px;
 	top: 15px;
 	z-index: -1;
-    transition: all 0.3s ease;
+    transition: top .3s, height .3s;
 }
 
 .form-button:hover::before{
@@ -1088,6 +1088,10 @@ input[type="radio"].visually-hidden {
  	cursor: pointer;
 }
 
+.toggle:hover{
+	transform: scale(1.1);
+}
+
 .range-controls .toggle-min {
 	left: 0;
 	top: 6px;
@@ -1171,7 +1175,7 @@ input[type="radio"].visually-hidden {
 	left: -39px;
 }
 
-.filter-input-checkbox:checked + span::after {
+.filter-input-checkbox:checked + span::before {
 	content: "";
 	position: absolute;
 	width: 26px;
@@ -1191,7 +1195,7 @@ input[type="radio"].visually-hidden {
 	left: -39px;
 }
 
-.filter-input-radio:checked + span::after {
+.filter-input-radio:checked + span::before {
 	content: "";
 	position: absolute;
 	width: 25px;
@@ -1284,7 +1288,7 @@ input[type="radio"].visually-hidden {
 	left: 0px;
 	top: 15px;
 	z-index: -1;
-    transition: all 0.3s ease;
+    transition: top .3s, height .3s;
 }
 
 .filters-button:hover::before{
@@ -1506,7 +1510,7 @@ input[type="radio"].visually-hidden {
 	left: 0px;
 	top: 23px;
 	z-index: -1;
-    transition: all 0.3s ease;
+    transition: top .3s, height .3s;
 }
 
 .catalog-button:hover::before{
@@ -1646,10 +1650,31 @@ input[type="radio"].visually-hidden {
 
 
 .wrapper-about{
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 70px;
 	padding-bottom: 75px;
+}
+
+.wrapper-about::before{
+	content: '';
+	position: absolute;
+	height: 7px;
+	width: 80px;
+	top: 19px;
+	left: 0;
+	background-color: black;
+}
+
+.wrapper-about::after{
+	content: '';
+	position: absolute;
+	height: 7px;
+	width: 80px;
+	top: 19px;
+	right: 480px;
+	background-color: black;
 }
 
 .wrapper-about p{
@@ -1851,27 +1876,30 @@ input[type="radio"].visually-hidden {
 }
 
 .product-1:checked ~ .selfi-stick {
-  display: flex;
+ 	display: flex;
 }
 
 .product-2:checked ~ .bracelet {
-  display: flex;
+ 	display: flex;
 }
 
 .product-3:checked ~ .quadcopter {
-  display: flex;
+ 	display: flex;
 }
 
 
-.appointment-form {
-	padding-left: 100px;
-	padding-right: 100px;
-}
 
-.wrapper-form{
-	padding-left: 100px;
-	padding-right: 100px;
-	position: relative;
+.modal-form{
+	width: 960px;
+	position: fixed;
+	margin-top: -280px;
+	margin-left: -480px;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	z-index: 101;
+
+	display: none;
 }
 
 .wrapper-form-info{
@@ -1942,15 +1970,20 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-map{
-	position: relative;
-	z-index: 10;
+	position: fixed;
+	z-index: 101;
+	width: 960px;
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+	margin-left: -480px;
+
+	display: none;
 }
 
 .modal-map p{
 	margin: 0;
-	display: flex;
-	justify-content: center;
-
+	
 }
 
 .modal-map img{
@@ -1969,12 +2002,12 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-form .modal-close{
-	right: 122px;
-    top: 22px
+	right: 22px;
+	top: 20px;
 }
 
 .modal-map .modal-close{
-	right: 142px;
+	right: 22px;
     top: 22px
 }
 
@@ -2031,6 +2064,11 @@ input[type="radio"].visually-hidden {
 	.stats td, .properties td{
 		padding-right: 70px;
 		padding-bottom: 6px;
+	}
+
+	.about{
+		width: 598px;
+		/* тут на глаз для ie11, сетка почему то в ие здесь рассыпается*/
 	}
 
 }
