@@ -454,15 +454,11 @@ input[type="radio"].visually-hidden {
 
 .categories-item a{
 	display: flex;
-	padding-top: 40px;
+	padding-top: 194px;
 }
 
 .categories-item{
-	padding-top: 153px;
 	width: 160px;
-}
-
-.categories-item {
 	position: relative;
 }
 
@@ -476,20 +472,81 @@ input[type="radio"].visually-hidden {
 	left: 0;
 }
 
-.categories-item .categories-vr::before{
+.categories-item .categories-vr::after{
+	content: '';
+	position: absolute;
 	background-image: url(../img/popular-1.svg);
 	background-repeat: no-repeat;
-	background-position: 31px 52px;
+	width: 97px;
+	height: 55px;
+	top: 52px;
+	left: 31px;
+}
 
+.categories-item .categories-monopods::after{
+	content: '';
+	position: absolute;
+	background-image: url(../img/popular-2.svg);
+	background-repeat: no-repeat;
+	width: 86px;
+	height: 117px;
+	top: 41px;
+	left: 38px;
+}
+
+.categories-item .categories-cameras::after{
+	content: '';
+	position: absolute;
+	background-image: url(../img/popular-3.svg);
+	background-repeat: no-repeat;
+	width: 71px;
+	height: 87px;
+	top: 38px;
+	left: 49px;
+}
+
+.categories-item .categories-bracelets::after{
+	content: '';
+	position: absolute;
+	background-image: url(../img/popular-4.svg);
+	background-repeat: no-repeat;
+	width: 107px;
+	height: 65px;
+	top: 50px;
+	left: 28px;
+}
+
+.categories-item .categories-clocks::after{
+	content: '';
+	position: absolute;
+	background-image: url(../img/popular-5.svg);
+	background-repeat: no-repeat;
+	width: 56px;
+	height: 98px;
+	top: 32px;
+	left: 55px;
+}
+
+.categories-item .categories-quadros::after{
+	content: '';
+	position: absolute;
+	background-image: url(../img/popular-6.svg);
+	background-repeat: no-repeat;
+	width: 132px;
+	height: 69px;
+	top: 49px;
+	left: 14px;
+}
+
+.categories-item:active a::after{
+	opacity: .3;
 }
 
 .categories-item:hover a::before{
 	background-color: #f0c52e;
 }
 
-.categories-item:active .categories-vr::before{
-	opacity: .3;
-}
+
 
 .categories-list{
 	list-style: none;
@@ -2155,6 +2212,7 @@ input[type="radio"].visually-hidden {
 		width: 598px;
 		/* тут на глаз для ie11, сетка почему то в ие здесь рассыпается*/
 	}
+		
 
 }
 
