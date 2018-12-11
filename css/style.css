@@ -84,7 +84,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-menu .user-logout{
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 .user-logout{
@@ -273,6 +273,14 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.6);
 }
 
+.main-nav a:hover::before{
+	opacity: 0.6;
+}
+
+.main-nav a:active::before{
+	opacity: 0.3;
+}
+
 .main-nav a:active{
 	color: rgba(0, 0, 0, 0.3);
 }
@@ -420,13 +428,6 @@ input[type="radio"].visually-hidden {
 	color: #464646;
 }
 
-
-.categories-item{
-	padding-top: 200px;
-	width: 160px;
-
-}
-
 .products-item table{
 	margin: 0;
 	padding: 0;
@@ -445,6 +446,49 @@ input[type="radio"].visually-hidden {
 
 .quadcopter td:last-child{
 	padding-right: 171px;
+}
+
+.categories{
+	padding-top: 49px;
+}
+
+.categories-item a{
+	display: flex;
+	padding-top: 40px;
+}
+
+.categories-item{
+	padding-top: 153px;
+	width: 160px;
+}
+
+.categories-item {
+	position: relative;
+}
+
+.categories-item a::before{
+	position: absolute;
+	content: '';
+	width: 160px;
+	height: 160px;
+	background-color: #f7e296;
+	top: 0;
+	left: 0;
+}
+
+.categories-item .categories-vr::before{
+	background-image: url(../img/popular-1.svg);
+	background-repeat: no-repeat;
+	background-position: 31px 52px;
+
+}
+
+.categories-item:hover a::before{
+	background-color: #f0c52e;
+}
+
+.categories-item:active .categories-vr::before{
+	opacity: .3;
 }
 
 .categories-list{
@@ -466,11 +510,11 @@ input[type="radio"].visually-hidden {
 }
 
 .categories-list a:hover{
-	color: black;
+	color: rgba(0,0,0, 1);
 }
 
 .categories-list a:active{
-	color: #b2b2b2;
+	color: rgba(0,0,0, .3);
 }
 
 .service{
@@ -1380,9 +1424,8 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 	margin-bottom: 0;
 	margin-left: auto;
-	padding: 0;
+
 	width: 760px;
-	margin-bottom: 38px;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -1553,7 +1596,7 @@ input[type="radio"].visually-hidden {
 	margin-left: auto;
 	padding: 0;
 	width: 760px;
-	margin-bottom: 77px;
+	padding-top: 20px;
 }
 
 .pagination a{
@@ -1720,7 +1763,7 @@ input[type="radio"].visually-hidden {
 	padding-right: 60px;
 	padding-left: 0;
 	box-shadow: inset 0 133px 0 0 #f7e296;
-	margin-bottom: 106px;
+	padding-bottom: 55px;
 }
 
 .selfi-stick-image{
@@ -1763,11 +1806,53 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	padding-top: 55px;
+	position: relative;
+}
+
+.selfi-stick .wrapper-info::before{
+	content: '';
+	position: absolute;
+	width: 166px;
+	height: 131px;
+	background: url(../img/01.png) no-repeat 50% 50%;
+	top: 31px;
+	right: 0px;
+}
+
+.bracelet .wrapper-info::before{
+	content: '';
+	position: absolute;
+	width: 198px;
+	height: 131px;
+	background: url(../img/02.png) no-repeat 50% 50%;
+	top: 31px;
+	right: 0px;
+}
+
+.quadcopter .wrapper-info::before{
+	content: '';
+	position: absolute;
+	width: 201px;
+	height: 131px;
+	background: url(../img/03.png) no-repeat 50% 50%;
+	top: 31px;
+	right: 0px;
+}
+
+.wrapper-info::after{
+	content: '';
+	position: absolute;
+	height: 7px;
+	width: 101px;
+    top: 59px;
+	left: 0px;
+	background-color: white;
 }
 
 .wrapper-info p,
 .wrapper-info b{
 	margin: 0;
+	z-index: 1;
 }
 
 .wrapper-info b{
@@ -1850,7 +1935,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
 	position: absolute;
-	bottom: 149px;
+	bottom: 204px;
 	z-index: 100;
 	right: 38px;
 	width: 160px;
