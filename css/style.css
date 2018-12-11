@@ -546,6 +546,10 @@ input[type="radio"].visually-hidden {
 	background-color: #f0c52e;
 }
 
+.categories-monopods{
+	width: 127px;
+}
+
 
 
 .categories-list{
@@ -554,7 +558,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 80px;
+	padding-bottom: 40px;
 }
 
 .categories-list a{
