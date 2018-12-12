@@ -696,7 +696,7 @@ input[type="radio"].visually-hidden {
 	outline: none;
 }
 
-.service-1:checked ~ .description-item{
+.service-1:checked ~ .delivery-item{
 	display: flex;
 }
 .service-2:checked ~ .warranty-item{
