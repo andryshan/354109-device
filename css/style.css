@@ -650,18 +650,18 @@ input[type="radio"].visually-hidden {
 }
 
 
-.service-list button{
+.service-list label{
 	border: none;
 	background-color: transparent;
 	width: 160px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	padding-left: 14px;
+
 	position: relative;
 }
 
 
-.service-list button::after{
+.service-list label::after{
 	content: '';
 	width: 160px;
 	height: 8px;
@@ -673,7 +673,7 @@ input[type="radio"].visually-hidden {
 	transition: top .3s, height .3s; 
 }
 
-.service-list button:hover::after{
+.service-list label:hover::after{
 	height: 40px;
 	top: 0px;
 }
@@ -682,16 +682,30 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 25px;
 }
 
-.service-list button:active{
+
+.service-1:checked ~ .service-list label[for="service-1"],
+.service-2:checked ~ .service-list label[for="service-2"],
+.service-3:checked ~ .service-list label[for="service-3"]{
 	color: #f7e184;
 	background-color: black;
 	outline: none;
-	width: 277px;
+	width: 262px;
 	padding-left: 20px;
 	text-align: left;
-	z-index: 1;
+	z-index: 10;
 	outline: none;
 }
+
+.service-1:checked ~ .description-item{
+	display: flex;
+}
+.service-2:checked ~ .warranty-item{
+	display: flex;
+}
+.service-3:checked ~ .credit-item{
+	display: flex;
+}
+/*из за чего не выводятся, если с display: none перевожу на flex */;
 
 .description-item{
 	position: relative;
@@ -1240,7 +1254,7 @@ input[type="radio"].visually-hidden {
 .filters{
 	display: flex;
 	flex-direction: column;
-	background-color: #eeeeee;
+	background: linear-gradient(to bottom, #dcdcdc 70px, #eeeeee 70px);
 	width: 328px;
 	margin: 0;
 	margin-right: auto;
@@ -2383,3 +2397,4 @@ input[type="radio"].visually-hidden {
 	}
 		
 }
+

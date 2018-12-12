@@ -145,13 +145,16 @@
 		
 		<section class="service">
 			<div class="container">
+				<input class="visually-hidden service-1" type="radio" id="service-1" name="toggle-service" checked>
+				<input class="visually-hidden service-2" type="radio" id="service-2" name="toggle-service">
+				<input class="visually-hidden service-3" type="radio" id="service-3" name="toggle-service">
 				<ul class="service-list">
-					<li class="service-item"><button type="button" class="button">Доставка</button></li>
-					<li class="service-item"><button type="button" class="button">Гарантия</button></li>
-					<li class="service-item"><button type="button" class="button">Кредит</button></li>
+					<li class="service-item"><label class="button" for="service-1">Доставка</label></li>
+					<li class="service-item"><label class="button" for="service-2">Гарантия</label></li>
+					<li class="service-item"><label class="button" for="service-3">Кредит</label></li>
 				</ul>
 				<ul class="service-description">
-					<li class="description-item delivery-item">
+					<li class="description-item delivery-item slider-hidden">
 						<h2 class="service-paragraph">Доставка</h2>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</li>
