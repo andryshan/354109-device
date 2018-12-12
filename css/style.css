@@ -323,6 +323,10 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 12px;
 }
 
+.form-input:focus::-webkit-input-placeholder{
+	color: black;
+}
+
 .form-input:focus ~ .form-search{
 	visibility: visible;
 }
@@ -450,6 +454,7 @@ input[type="radio"].visually-hidden {
 
 .categories{
 	padding-top: 49px;
+	padding-bottom: 40px;
 }
 
 .categories-item a{
@@ -578,10 +583,15 @@ input[type="radio"].visually-hidden {
 	color: rgba(0,0,0, .3);
 }
 
+.service .container{
+	display: flex;
+}
+
 .service{
 	background-color: #e5e5e5;
 	margin: 0;
 	padding: 0;
+	box-shadow: inset 0 99px 0 white;
 }
 
 .service-list,
@@ -592,58 +602,142 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list{
+	padding-top: 79px;
+	position: relative;
+}
+
+.service-list:after{
+	position: absolute;
+	content: '';
+	width: 7px;
+	height: 319px;
+	top: 0;
+	right: 16px;
+	background-color: black;
+
+}
+
+.service-paragraph{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 48px;
+	color: black;
+	letter-spacing: 0.01em;
+	margin: 0;
+	padding-top: 73px;
+	padding-bottom: 15px;
+}
+
+.service-description p{
+	padding-top: 16px;
+	margin: 0;
+	width: 460px;
+}
+
+.service-description .credit-paragraph{
+	width: 433px;
+}
+
+.service-list{
 	width: 300px;
 	margin-right: 100px;
+	padding-bottom: 114px;
 }
 
 .service-description{
 	width: 760px;
 }
 
+
 .service-list button{
-	font-family: 'Gilroy', 'Arial', sans-serif;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-	color: black;
-	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
+	width: 160px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 14px;
+	position: relative;
+}
+
+
+.service-list button::after{
+	content: '';
+	width: 160px;
+	height: 8px;
+	top: 16px;
+	left: 0;
 	background-color: #f0c52e;
-	border: none; 
+	position: absolute;
+	z-index: -1;
+	transition: top .3s, height .3s; 
+}
+
+.service-list button:hover::after{
+	height: 40px;
+	top: 0px;
+}
+
+.service-item{
+	padding-bottom: 25px;
 }
 
 .service-list button:active{
 	color: #f7e184;
 	background-color: black;
 	outline: none;
+	width: 277px;
+	padding-left: 20px;
+	text-align: left;
+	z-index: 1;
+	outline: none;
 }
 
-.image-delivery{
+.description-item{
+	position: relative;
+}
+
+.delivery-item::before{
+	content: '';
+	position: absolute;
 	width: 136px;
 	height: 164px;
 	background-image: url('../img/delivery.svg');
 	background-repeat: no-repeat; 
 	background-position: 0 0;
+	top: 85px;
+    right: 66px;
 }
 
-.image-guaranty{
+.warranty-item::before{
+	content: '';
+	position: absolute;
 	width: 171px;
 	height: 194px;
 	background-image: url('../img/warranty.svg');
 	background-repeat: no-repeat;
 	background-position: 0 0; 
+	top: 61px;
+	right: 46px;
 }
 
-.image-credit{
+
+.credit-item::before{
+	content: '';
+	position: absolute;
 	width: 156px;
 	height: 186px;
 	background-image: url('../img/credit.svg');
 	background-repeat: no-repeat;
-	background-position: 0 0; 
+	background-position: 0 0;
+	top: 61px;
+	right: 70px; 
 }
 
+
 .partners{
-	padding-bottom: 78px;
+	padding-top: 94px;
+	padding-bottom: 65px;
 }
 
 .partners-list{
@@ -757,6 +851,7 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.2em;
 	z-index: 1;
 	cursor: pointer;
+	vertical-align: top;
 }
 
 
@@ -1945,10 +2040,11 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 25px;
 }
 
-.service .container{
-	display: flex;
-	margin-bottom: 94px;
+
+.slider-hidden{
+	display: none;
 }
+
 
 .sub-menu-wrap{
 	position:absolute;
@@ -1998,6 +2094,7 @@ input[type="radio"].visually-hidden {
 	padding: 10px;
 	border-radius: 50%;
 	cursor: pointer;
+	vertical-align: top;
 }
 
 .slider-controls label::after {
@@ -2065,6 +2162,7 @@ input[type="radio"].visually-hidden {
 	z-index: 101;
 
 	display: none;
+
 }
 
 .wrapper-form-info{
@@ -2097,6 +2195,25 @@ input[type="radio"].visually-hidden {
 	background-color: #f2f2f2;
 	border: none;
 	padding: 16px 20px;
+}
+
+.appointment-item input:hover,
+.appointment-item textarea:hover{
+	background-color: #eaeaea;
+}
+
+.appointment-item input:focus,
+.appointment-item textarea:focus{
+	background-color: white;
+	color: black;
+	border: 2px solid #f7e296;
+	outline: none;
+	padding: 14px 18px;
+}
+
+.appointment-item input:invalid,
+.appointment-item textarea:invalid{
+	background-color: #f6dada;
 }
 
 .appointment-item input{
@@ -2234,9 +2351,20 @@ input[type="radio"].visually-hidden {
 			inset 0 133px 0 0 #f7e296;
 		
    }
+
+   .service{
+		background-color: #e5e5e5;
+		margin: 0;
+		padding: 0;
+		box-shadow: inset 0 99px 0 white,
+					inset 0 99px 0 white,
+					inset 0 99px 0 white,
+					inset 0 99px 0 white,
+					inset 0 99px 0 white;
+	}
+
 	.main-header.container{
 		width: 1161px;
-		
 	}
 	
 	.quadcopter .wrapper-info{
@@ -2254,8 +2382,4 @@ input[type="radio"].visually-hidden {
 		/* тут на глаз для ie11, сетка почему то в ие здесь рассыпается*/
 	}
 		
-
 }
-
-
-
