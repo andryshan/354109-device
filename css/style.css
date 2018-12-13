@@ -555,8 +555,6 @@ input[type="radio"].visually-hidden {
 	width: 127px;
 }
 
-
-
 .categories-list{
 	list-style: none;
 	margin: 0;
@@ -694,26 +692,33 @@ input[type="radio"].visually-hidden {
 	text-align: left;
 	z-index: 10;
 	outline: none;
+	position: static;
 }
 
-.service-1:checked ~ .delivery-item{
+.service-1:checked ~ .service-description .delivery-item{
 	display: flex;
+	flex-direction: column;
+	position: relative;
+
 }
-.service-2:checked ~ .warranty-item{
+.service-2:checked ~ .service-description .warranty-item{
 	display: flex;
+	flex-direction: column;
+	position: relative;
 }
-.service-3:checked ~ .credit-item{
+.service-3:checked ~ .service-description .credit-item{
 	display: flex;
+	flex-direction: column;
+	position: relative;
 }
-/*из за чего не выводятся, если с display: none перевожу на flex */;
 
 .description-item{
 	position: relative;
 }
 
 .delivery-item::before{
-	content: '';
 	position: absolute;
+	content: '';
 	width: 136px;
 	height: 164px;
 	background-image: url('../img/delivery.svg');
@@ -1933,6 +1938,34 @@ input[type="radio"].visually-hidden {
 
 .wrapper{
 	display: flex;
+	position: relative;
+}
+
+.wrapper .container{
+	display: flex;
+}
+
+.wrapper .container:before{
+	display: flex;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, #dcdcdc 70px, #eeeeee 70px);
+	height: 100%;
+	width: 200px;
+
+}
+
+.wrapper .container:after{
+	display: flex;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: linear-gradient(to bottom, #ebebeb 70px, white 70px);
+	height: 100%;
+	width: 200px;
 
 }
 
@@ -2279,6 +2312,10 @@ input[type="radio"].visually-hidden {
 
 .modal-map p{
 	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	
 }
 
@@ -2295,6 +2332,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 	cursor: pointer;
 	position: absolute;
+	z-index: 3;
 }
 
 .appointment-form .modal-close{
@@ -2353,6 +2391,61 @@ input[type="radio"].visually-hidden {
 	height: 61px;
 	top: 28px;
 	right: 27px;
+}
+
+.modal-show{
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-map iframe{
+	position: relative;
+	z-index: 2;
+	border: none;
+}
+
+@keyframes bounce{
+	0%{
+		transform: translateY(-2000px);
+	}
+
+	70%{
+		transform: translateY(30px);
+	}
+
+	90%{
+    	transform: translateY(-10px);
+	}
+
+	100% {
+    	transform: translateY(0);
+    }
+}
+
+@keyframes shake{
+	0%,
+	100%{
+		transform: translateX(0);
+  	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90%{
+	transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80%{
+    transform: translateX(10px);
+  	}
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
