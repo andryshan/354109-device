@@ -465,6 +465,7 @@ input[type="radio"].visually-hidden {
 .categories-item{
 	width: 160px;
 	position: relative;
+	cursor: pointer;
 }
 
 .categories-item a::before{
@@ -560,6 +561,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-bottom: 40px;
 }
@@ -629,6 +631,7 @@ input[type="radio"].visually-hidden {
 
 .service-description p{
 	padding-top: 16px;
+	padding-bottom: 16px;
 	margin: 0;
 	width: 460px;
 }
@@ -764,6 +767,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -1284,18 +1288,18 @@ input[type="radio"].visually-hidden {
 	border-radius: 5px;
 }
 
-.range-controls .scale {
+.range-controls .scale{
 	height: 2px;
 	background: #dbdbdb;
 }
 
-.range-controls .bar {
+.range-controls .bar{
 	width: 60%;
 	height: 2px;
 	background: #91c92f;
 }
 
-.range-controls .toggle {
+.range-controls .toggle{
 	width: 4px;
 	height: 4px;
 	padding: 0;
@@ -1311,12 +1315,12 @@ input[type="radio"].visually-hidden {
 	transform: scale(1.1);
 }
 
-.range-controls .toggle-min {
+.range-controls .toggle-min{
 	left: 0;
 	top: 6px;
 }
 
-.range-controls .toggle-max {
+.range-controls .toggle-max{
 	left: 107px;
 	top: 6px
 }
@@ -1379,6 +1383,12 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
+.filter-input-checkbox:focus ~ span::before,
+.filter-input-checkbox:focus ~ span::after,
+.filter-input-radio:focus ~ span::before,
+.filter-input-radio:focus ~ span::after{
+	opacity: 0.6;
+}
 
 .filter-input:disabled ~ span{
 	opacity: 0.25;
@@ -2384,6 +2394,7 @@ input[type="radio"].visually-hidden {
 	height: 61px;
 	top: 28px;
 	right: 27px;
+	opacity: 0.7;
 }
 
 .modal-show{
@@ -2484,3 +2495,18 @@ input[type="radio"].visually-hidden {
 		
 }
 
+@-moz-document url-prefix() {
+	.main-header.container{
+		width: 1161px;
+	}
+	
+	.quadcopter .wrapper-info{
+		width: 508px;
+		/* "Порхает как бабочка не влезает в ИЕ" */
+	}
+
+	.stats td, .properties td{
+		padding-right: 70px;
+		padding-bottom: 6px;
+	}
+}
