@@ -1937,36 +1937,29 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper{
+	width: 100%;
 	display: flex;
-	position: relative;
 }
 
 .wrapper .container{
 	display: flex;
+	width: 1160px;
+	padding: 0;
 }
 
-.wrapper .container:before{
+.wrapper:before{
 	display: flex;
 	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
 	background: linear-gradient(to bottom, #dcdcdc 70px, #eeeeee 70px);
-	height: 100%;
-	width: 200px;
+	flex-grow: 1;
 
 }
 
-.wrapper .container:after{
+.wrapper:after{
 	display: flex;
 	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: linear-gradient(to bottom, #ebebeb 70px, white 70px);
-	height: 100%;
-	width: 200px;
-
+	background: linear-gradient(to bottom, #eeeeee 70px, white 70px);
+	flex-grow: 1;
 }
 
 .container-catalog{
