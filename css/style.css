@@ -1279,7 +1279,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls{
 	position: relative;
-	height: 15px;
+	height: 13px;
 	padding-top: 15px;
 	border-radius: 5px;
 }
@@ -1312,7 +1312,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls .toggle-min{
-	left: 0;
+	left: -6px;
 	top: 6px;
 }
 
@@ -1329,12 +1329,13 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0;
-	padding-bottom: 30px;
+	padding-bottom: 32px;
 	color: #bebebe;
+	position: relative;
 }
 
 .min-price{
-	margin-right: 50px;
+	margin-right: 59px;
 }
 
 .color{
