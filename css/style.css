@@ -239,7 +239,6 @@ input[type="radio"].visually-hidden {
 	opacity: 0.7;
 }
 
-
 .sub-menu{
 	display: flex;
 	flex-direction: column;
@@ -297,8 +296,6 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 }
 
-
-/* с блоком инпута правильно не знаю как поступать (забыл что пока мы делаем только базовую стиизацию)*/
 .form-input{
 	background-color: #f7e296;
 	border: none;
@@ -657,7 +654,6 @@ input[type="radio"].visually-hidden {
 	width: 160px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-
 	position: relative;
 }
 
@@ -704,11 +700,13 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 }
+
 .service-2:checked ~ .service-description .warranty-item{
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
+
 .service-3:checked ~ .service-description .credit-item{
 	display: flex;
 	flex-direction: column;
@@ -1136,12 +1134,10 @@ input[type="radio"].visually-hidden {
     display: flex;
     margin-bottom: 0;
     margin-left: 500px;
-
     margin-right: auto;
     justify-content: space-between;
     box-sizing: border-box;
     flex-wrap: wrap;
-  	/*Поставил здесь border-box с падингами слева и справа то не пришлось урезать длину контейнера как в "ДоставкаГарантияКонтакты" */
 }
 .social-btn{
 	width: 32px;
@@ -1481,6 +1477,7 @@ input[type="radio"].visually-hidden {
 	color: black;
 	margin: 0;
 }
+
 .filters ul{
 	list-style: none;
 	line-height: 40px;
@@ -1620,7 +1617,6 @@ input[type="radio"].visually-hidden {
 	color: black;
 }
 
-/* прописал inline-block, чтоб было видно хотябы что треугольники вставил */
 .sort-up a{
 	background: url('../img/icon-up-dir.svg') no-repeat 0 0;
 	width: 11px;
@@ -1888,13 +1884,17 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.menu:focus-within .sub-menu-wrap{
+	display: flex;
+}
+
+
 .menu-catalog svg{
 	position: absolute;
 	top: 3px;
 	left: 230px;
 	fill-opacity: 0.3;
 }
-
 
 .wrapper-about{
 	position: relative;
@@ -1962,7 +1962,6 @@ input[type="radio"].visually-hidden {
 	content: '';
 	background: linear-gradient(to bottom, #dcdcdc 70px, #eeeeee 70px);
 	flex-grow: 1;
-
 }
 
 .wrapper:after{
@@ -2199,8 +2198,6 @@ input[type="radio"].visually-hidden {
  	display: flex;
 }
 
-
-
 .modal-form{
 	width: 960px;
 	position: fixed;
@@ -2210,7 +2207,6 @@ input[type="radio"].visually-hidden {
 	left: 50%;
 	background-color: white;
 	z-index: 101;
-
 	display: none;
 
 }
@@ -2309,7 +2305,6 @@ input[type="radio"].visually-hidden {
 	left: 50%;
 	margin-top: -280px;
 	margin-left: -480px;
-
 	display: none;
 }
 
@@ -2319,7 +2314,6 @@ input[type="radio"].visually-hidden {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	
 }
 
 .modal-map img{
@@ -2460,7 +2454,6 @@ input[type="radio"].visually-hidden {
 			inset 0 133px 0 0 #f7e296,
 			inset 0 133px 0 0 #f7e296,
 			inset 0 133px 0 0 #f7e296;
-		
    }
 
    .service{
@@ -2491,8 +2484,7 @@ input[type="radio"].visually-hidden {
 	.about{
 		width: 598px;
 		/* тут на глаз для ie11, сетка почему то в ие здесь рассыпается*/
-	}
-		
+	}	
 }
 
 @-moz-document url-prefix() {
