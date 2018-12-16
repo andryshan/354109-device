@@ -1334,8 +1334,26 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.price-controls input {
+	width: 34px;
+	text-align: center;
+	border: none;
+	color: #bebebe;
+	background: #eeeeee;
+}
+
+.min-price input{
+	width: 40px;
+	text-align: left;
+}
+
+.max-price input{
+	width: 44px;
+	text-align: left;
+}
+
 .min-price{
-	margin-right: 59px;
+	margin-right: 28px;
 }
 
 .color{
