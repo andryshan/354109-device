@@ -230,6 +230,10 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
+.catalog-item:hover{
+	cursor: pointer;
+}
+
 .catalog-item:hover .wrapper-links{
 	display: flex;
 	opacity: 1;
@@ -237,6 +241,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover img{
 	opacity: 0.7;
+
 }
 
 .sub-menu{
