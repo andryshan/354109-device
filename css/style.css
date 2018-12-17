@@ -99,6 +99,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	padding-left: 27px;
 }
+
 .menu-login::before{
 	content: "";
 	position: absolute;
@@ -216,8 +217,8 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
-
 }
+
 .wrapper-links{
 	width: 200px;
 	display: flex;
@@ -241,7 +242,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover img{
 	opacity: 0.7;
-
 }
 
 .sub-menu{
@@ -257,6 +257,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 }
+
 .main-header-logo{
 	padding-top: 11px;
 }
@@ -315,9 +316,14 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 14px;
 }
 
-.form-input::-webkit-input-placeholder {
+.form-input::-webkit-input-placeholder{
 	color: black;
 	opacity: 0.3;
+}
+
+.form-input:hover::-webkit-input-placeholder{
+	color: black;
+	opacity: 1;
 }
 
 .form-input:focus{
@@ -652,7 +658,6 @@ input[type="radio"].visually-hidden {
 	width: 760px;
 }
 
-
 .service-list label{
 	border: none;
 	background-color: transparent;
@@ -661,7 +666,6 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 8px;
 	position: relative;
 }
-
 
 .service-list label::after{
 	content: '';
@@ -683,7 +687,6 @@ input[type="radio"].visually-hidden {
 .service-item{
 	padding-bottom: 25px;
 }
-
 
 .service-1:checked ~ .service-list label[for="service-1"],
 .service-2:checked ~ .service-list label[for="service-2"],
@@ -746,7 +749,6 @@ input[type="radio"].visually-hidden {
 	right: 46px;
 }
 
-
 .credit-item::before{
 	content: '';
 	position: absolute;
@@ -758,7 +760,6 @@ input[type="radio"].visually-hidden {
 	top: 61px;
 	right: 70px; 
 }
-
 
 .partners{
 	padding-top: 94px;
@@ -1587,6 +1588,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 25px;
 	margin-right: auto;
 }
+
 .sort-list a{
 	color: #b7b7b7;
 }
@@ -1751,7 +1753,6 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 	padding-top: 15px;
 	padding-bottom: 15px;
-
 }
 
 .catalog-button::before{
@@ -1774,7 +1775,6 @@ input[type="radio"].visually-hidden {
 .catalog-button:active{
 	color: #a88a20;
 }
-
 
 .catalog-add-compare{
 	font-family: 'Open Sans', 'Arial', sans-serif;
@@ -2485,7 +2485,7 @@ input[type="radio"].visually-hidden {
 			inset 0 133px 0 0 #f7e296;
    }
 
-   .service{
+	.service{
 		background-color: #e5e5e5;
 		margin: 0;
 		padding: 0;
@@ -2502,7 +2502,6 @@ input[type="radio"].visually-hidden {
 	
 	.quadcopter .wrapper-info{
 		width: 508px;
-		/* "Порхает как бабочка не влезает в ИЕ" */
 	}
 
 	.stats td, .properties td{
@@ -2512,7 +2511,6 @@ input[type="radio"].visually-hidden {
 
 	.about{
 		width: 598px;
-		/* тут на глаз для ie11, сетка почему то в ие здесь рассыпается*/
 	}	
 }
 
@@ -2522,12 +2520,21 @@ input[type="radio"].visually-hidden {
 	}
 	
 	.quadcopter .wrapper-info{
-		width: 508px;
-		/* "Порхает как бабочка не влезает в ИЕ" */
+		width: 501px;
 	}
 
 	.stats td, .properties td{
 		padding-right: 70px;
 		padding-bottom: 6px;
+	}
+
+	.form-input::-moz-placeholder{ 
+		color: black;  
+    	opacity: 0.3;
+	}
+
+	.form-input:hover::-moz-placeholder{
+		color: black;
+		opacity: 1;
 	}
 }
