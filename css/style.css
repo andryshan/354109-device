@@ -1736,6 +1736,7 @@ input[type="radio"].visually-hidden {
 }
 
 .item-image{
+	margin: 0;
 	order: -1;
 }
 
@@ -1780,6 +1781,10 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: center;
 	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 
 .catalog-add-compare:hover{
