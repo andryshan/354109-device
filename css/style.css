@@ -255,7 +255,10 @@ input[type="radio"].visually-hidden {
 	text-transform: none;
 	letter-spacing: 0.01em;
 	margin: 0;
-	padding: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
 }
 
 .main-header-logo{
@@ -299,7 +302,7 @@ input[type="radio"].visually-hidden {
 }
 
 .quadro{
-	margin-right: 0;
+	margin-right: 48px;
 }
 
 .form-input{
@@ -593,6 +596,8 @@ input[type="radio"].visually-hidden {
 
 .service .container{
 	display: flex;
+	background-color: #e5e5e5;
+	box-shadow: inset 0 99px 0 white;
 }
 
 .service{
@@ -618,7 +623,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	content: '';
 	width: 7px;
-	height: 319px;
+	height: 82%;
 	top: 0;
 	right: 16px;
 	background-color: black;
@@ -642,6 +647,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 16px;
 	margin: 0;
 	width: 460px;
+	letter-spacing: 0.02em;
 }
 
 .service-description .credit-paragraph{
@@ -809,11 +815,13 @@ input[type="radio"].visually-hidden {
 .about-choice{
 	padding-top: 14px;
     padding-bottom: 9px;
+	width: 450px;
 }
 
 .about-delivery{
 	padding-top: 21px;
     padding-bottom: 40px;
+    width: 477px;
 }
 
 .about-list,
@@ -959,8 +967,12 @@ input[type="radio"].visually-hidden {
 
 .main-footer{
 	background-color: #464646;
+}
+
+.main-footer .container{
+	background-color: #464646;
 	padding-top: 48px;
-	padding-bottom: 48px;
+	padding-bottom: 48px; 
 }
 
 .logo:hover{
@@ -1587,6 +1599,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	padding-top: 25px;
 	margin-right: auto;
+	flex-wrap: wrap;
 }
 
 .sort-list a{
@@ -1595,6 +1608,7 @@ input[type="radio"].visually-hidden {
 
 .sort-list li{
 	margin-right: 28px;
+	padding-bottom: 20px;
 }
 
 .sort-list a:hover{
@@ -1709,6 +1723,9 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	display: flex;
 	width: 104px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
 	justify-content: flex-end;
 }
 
@@ -1726,16 +1743,6 @@ input[type="radio"].visually-hidden {
 .wrapper-title-price h3,
 .wrapper-title-price p{
 	margin: 0;
-}
-
-
-.catalog-item-price b{
-	font-family: 'Gilroy', 'Arial', sans-serif;
-	color: black;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 300px;
-	letter-spacing: 0.01em;
 }
 
 .catalog-item .last-items{
@@ -2123,20 +2130,20 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
-
 .sub-menu-wrap{
 	position:absolute;
 	background-color: #f7e296;
 	padding-top: 21px;
-	padding-bottom: 34px;
+	padding-bottom: 24px;
 	top: 24px;
 	left: -60px;
 	width: 1160px;
-    box-sizing: border-box;
-    padding-right: 60px;
-    padding-left: 60px;
-    display: none;
-   	z-index: 1;
+	box-sizing: border-box;
+	padding-right: 60px;
+	padding-left: 60px;
+	display: none;
+	z-index: 2;
+	flex-wrap: wrap;
 }
 
 .menu:hover .sub-menu-wrap{
@@ -2517,7 +2524,7 @@ input[type="radio"].visually-hidden {
 
 @-moz-document url-prefix() {
 	.main-header.container{
-		width: 1161px;
+		width: 1160px;
 	}
 	
 	.quadcopter .wrapper-info{
