@@ -2411,7 +2411,7 @@ input[type='radio'].visually-hidden{
 .new-item::after{
 	position: absolute;
 	content: '';
-	background-image: url('../img/new.png');
+	background-image: url('../img/new-item.png');
 	width: 60px;
 	height: 61px;
 	top: 28px;
